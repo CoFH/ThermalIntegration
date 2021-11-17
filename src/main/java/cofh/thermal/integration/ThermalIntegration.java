@@ -1,9 +1,9 @@
 package cofh.thermal.integration;
 
+import cofh.thermal.integration.init.TIntConfig;
 import net.minecraftforge.fml.common.Mod;
 
 import static cofh.lib.util.constants.Constants.ID_THERMAL_INTEGRATION;
-import static cofh.thermal.lib.common.ThermalFlags.*;
 
 @Mod(ID_THERMAL_INTEGRATION)
 public class ThermalIntegration {
