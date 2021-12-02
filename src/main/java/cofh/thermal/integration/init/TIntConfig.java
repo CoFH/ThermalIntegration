@@ -17,10 +17,6 @@ public class TIntConfig {
         }
         FMLJavaModLoadingContext.get().getModEventBus().register(TIntConfig.class);
         registered = true;
-
-        genClientConfig();
-
-        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, clientSpec);
     }
 
     public static void setup() {
@@ -39,42 +35,14 @@ public class TIntConfig {
     private static final ForgeConfigSpec.Builder SERVER_CONFIG = new ForgeConfigSpec.Builder();
     private static ForgeConfigSpec serverSpec;
 
-    private static final ForgeConfigSpec.Builder CLIENT_CONFIG = new ForgeConfigSpec.Builder();
-    private static ForgeConfigSpec clientSpec;
-
     private static void genServerConfig() {
-
-        genWorldConfig();
 
         serverSpec = SERVER_CONFIG.build();
 
         refreshServerConfig();
     }
 
-    private static void genClientConfig() {
-
-        clientSpec = CLIENT_CONFIG.build();
-
-        refreshClientConfig();
-    }
-
-    private static void genWorldConfig() {
-
-        SERVER_CONFIG.push("World Generation");
-
-        SERVER_CONFIG.pop();
-    }
-
     private static void refreshServerConfig() {
-
-        refreshWorldConfig();
-    }
-
-    private static void refreshWorldConfig() {
-
-    }
-
-    private static void refreshClientConfig() {
 
     }
     // endregion
@@ -85,7 +53,6 @@ public class TIntConfig {
 
         switch (event.getConfig().getType()) {
             case CLIENT:
-                refreshClientConfig();
                 break;
             case SERVER:
                 refreshServerConfig();
@@ -97,7 +64,6 @@ public class TIntConfig {
 
         switch (event.getConfig().getType()) {
             case CLIENT:
-                refreshClientConfig();
                 break;
             case SERVER:
                 refreshServerConfig();
