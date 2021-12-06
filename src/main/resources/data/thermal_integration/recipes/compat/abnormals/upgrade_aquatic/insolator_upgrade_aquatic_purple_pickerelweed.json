@@ -1,11 +1,11 @@
 {
   "type": "thermal:insolator",
   "ingredient": {
-    "item": "upgrade_aquatic:pickerel_weed_blue"
+    "item": "upgrade_aquatic:purple_pickerelweed"
   },
   "result": [
     {
-      "item": "upgrade_aquatic:pickerel_weed_blue",
+      "item": "upgrade_aquatic:purple_pickerelweed",
       "chance": 2.0
     }
   ],
