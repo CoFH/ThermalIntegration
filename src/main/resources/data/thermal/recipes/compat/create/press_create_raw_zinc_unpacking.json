@@ -1,0 +1,25 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "item": "create:raw_zinc_block",
+      "count": 1
+    },
+    {
+      "item": "thermal:press_unpacking_die"
+    }
+  ],
+  "result": [
+    {
+      "item": "create:raw_zinc",
+      "count": 9
+    }
+  ],
+  "energy": 400,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

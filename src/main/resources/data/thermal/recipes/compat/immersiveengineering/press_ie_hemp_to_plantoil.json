@@ -1,0 +1,21 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "item": "immersiveengineering:seeds"
+    }
+  ],
+  "result": [
+    {
+      "fluid": "immersiveengineering:plantoil",
+      "amount": 120
+    }
+  ],
+  "energy": 800,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ]
+}

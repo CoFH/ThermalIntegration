@@ -1,0 +1,24 @@
+{
+  "type": "thermal:smelter",
+  "ingredient": {
+    "item": "create:raw_zinc"
+  },
+  "result": [
+    {
+      "item": "create:zinc_ingot",
+      "chance": 1.5,
+      "locked": true
+    },
+    {
+      "item": "thermal:sulfur",
+      "chance": 0.1
+    }
+  ],
+  "experience": 0.1,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "thermal:centrifuge",
+  "ingredient": {
+    "item": "create:crushed_uranium_ore"
+  },
+  "result": [
+    {
+      "item": "immersiveengineering:uranium_nugget",
+      "count": 9
+    }
+  ],
+  "energy": 1600,
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "immersiveengineering"
+        }
+      ]
+    }
+  ]
+}

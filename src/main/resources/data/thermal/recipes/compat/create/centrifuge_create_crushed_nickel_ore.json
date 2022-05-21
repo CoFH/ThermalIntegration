@@ -1,0 +1,23 @@
+{
+  "type": "thermal:centrifuge",
+  "ingredient": {
+    "item": "create:crushed_nickel_ore"
+  },
+  "result": [
+    {
+      "item": "thermal:nickel_nugget",
+      "count": 9
+    },
+    {
+      "item": "thermal:copper_nugget",
+      "chance": 0.25
+    }
+  ],
+  "energy": 1600,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "thermal:smelter",
+  "ingredient": {
+    "item": "create:crushed_silver_ore"
+  },
+  "result": [
+    {
+      "item": "thermal:silver_ingot",
+      "count": 1
+    }
+  ],
+  "energy_mod": 0.5,
+  "experience": 0.1,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

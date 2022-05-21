@@ -1,0 +1,34 @@
+{
+  "type": "thermal:chiller",
+  "ingredients": [
+    {
+      "fluid": "tconstruct:molten_aluminum",
+      "amount": 90
+    },
+    {
+      "item": "thermal:chiller_ingot_cast"
+    }
+  ],
+  "result": [
+    {
+      "item": "immersiveengineering:ingot_aluminum",
+      "count": 1
+    }
+  ],
+  "energy": 4800,
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "immersiveengineering"
+        }
+      ]
+    }
+  ]
+}

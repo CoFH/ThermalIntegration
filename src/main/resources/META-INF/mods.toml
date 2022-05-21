@@ -1,0 +1,52 @@
+modLoader = "javafml"
+loaderVersion = "[34,)"
+issueTrackerURL = "https://github.com/cofh/feedback"
+license = "CoFH - Don't Be A Jerk (Learn, Don't Steal)"
+
+[[mods]]
+modId = "thermal_integration"
+version = "${file.jarVersion}"
+displayName = "Thermal Integration"
+displayURL = "https://teamcofh.com/"
+logoFile = "thermal_integration.png"
+credits = "Team CoFH"
+authors = "King Lemming"
+description = '''
+Integrating Thermal with the wider modded ecosystem!
+
+Contains Thermal machine recipes and compatibility for many different mods.
+'''
+[[dependencies.thermal_integration]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.18.2,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.thermal_integration]]
+modId = "forge"
+mandatory = true
+versionRange = "[40.1.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.thermal_integration]]
+modId = "cofh_core"
+mandatory = true
+versionRange = "[1.6,1.7]"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.thermal_integration]]
+modId = "thermal"
+mandatory = true
+versionRange = "[1.6,1.7]"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.thermal_integration]]
+modId = "thermal_foundation"
+mandatory = true
+versionRange = "[1.6,1.7]"
+ordering = "AFTER"
+side = "BOTH"

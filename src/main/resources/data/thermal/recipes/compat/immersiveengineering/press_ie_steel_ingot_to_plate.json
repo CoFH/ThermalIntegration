@@ -1,0 +1,17 @@
+{
+  "type": "thermal:press",
+  "ingredient": {
+    "item": "immersiveengineering:ingot_steel"
+  },
+  "result": [
+    {
+      "item": "immersiveengineering:plate_steel"
+    }
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ]
+}

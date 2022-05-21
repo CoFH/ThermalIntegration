@@ -1,0 +1,18 @@
+{
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "farmersdelight:onion"
+  },
+  "result": [
+    {
+      "item": "farmersdelight:onion",
+      "chance": 2.5
+    }
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ]
+}

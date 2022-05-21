@@ -1,0 +1,34 @@
+{
+  "type": "thermal:smelter",
+  "ingredient": {
+    "value": [
+      {
+        "item": "create:zinc_ore"
+      },
+      {
+        "item": "create:deepslate_zinc_ore"
+      }
+    ]
+  },
+  "result": [
+    {
+      "item": "create:zinc_ingot",
+      "chance": 1.0
+    },
+    {
+      "item": "thermal:sulfur",
+      "chance": 0.2
+    },
+    {
+      "item": "thermal:rich_slag",
+      "chance": 0.2
+    }
+  ],
+  "experience": 0.2,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

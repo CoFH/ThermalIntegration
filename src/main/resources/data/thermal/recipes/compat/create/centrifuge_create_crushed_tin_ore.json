@@ -1,0 +1,23 @@
+{
+  "type": "thermal:centrifuge",
+  "ingredient": {
+    "item": "create:crushed_tin_ore"
+  },
+  "result": [
+    {
+      "item": "thermal:tin_nugget",
+      "count": 9
+    },
+    {
+      "item": "thermal:apatite",
+      "chance": 0.12
+    }
+  ],
+  "energy": 1600,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "thermal:smelter",
+  "ingredient": {
+    "item": "immersiveengineering:dust_uranium"
+  },
+  "result": [
+    {
+      "item": "immersiveengineering:ingot_uranium",
+      "count": 1
+    }
+  ],
+  "energy_mod": 0.5,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "thermal:centrifuge",
+  "ingredient": {
+    "item": "create:crushed_iron_ore"
+  },
+  "result": [
+    {
+      "item": "minecraft:iron_nugget",
+      "count": 9
+    },
+    {
+      "item": "minecraft:redstone",
+      "chance": 0.12
+    }
+  ],
+  "energy": 1600,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

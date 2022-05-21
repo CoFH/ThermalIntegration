@@ -1,0 +1,23 @@
+{
+  "type": "thermal:centrifuge",
+  "ingredient": {
+    "item": "create:crushed_zinc_ore"
+  },
+  "result": [
+    {
+      "item": "create:zinc_nugget",
+      "count": 9
+    },
+    {
+      "item": "minecraft:gunpowder",
+      "chance": 0.25
+    }
+  ],
+  "energy": 1600,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

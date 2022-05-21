@@ -1,0 +1,33 @@
+{
+  "type": "thermal:chiller",
+  "ingredients": [
+    {
+      "fluid": "tconstruct:molten_iron",
+      "amount": 45
+    },
+    {
+      "item": "thermal:chiller_rod_cast"
+    }
+  ],
+  "result": [
+    {
+      "item": "immersiveengineering:stick_iron"
+    }
+  ],
+  "energy": 2400,
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "immersiveengineering"
+        }
+      ]
+    }
+  ]
+}

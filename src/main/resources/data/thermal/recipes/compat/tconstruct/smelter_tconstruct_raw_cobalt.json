@@ -1,0 +1,24 @@
+{
+  "type": "thermal:smelter",
+  "ingredient": {
+    "item": "tconstruct:raw_cobalt"
+  },
+  "result": [
+    {
+      "item": "tconstruct:cobalt_ingot",
+      "chance": 1.5,
+      "locked": true
+    },
+    {
+      "item": "minecraft:iron_nugget",
+      "chance": 1.0
+    }
+  ],
+  "experience": 0.1,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "tconstruct"
+    }
+  ]
+}
