@@ -1,0 +1,23 @@
+{
+  "type": "thermal:bottler",
+  "ingredients": [
+    {
+      "tag": "minecraft:planks"
+    },
+    {
+      "fluid": "minecraft:lava",
+      "amount": 100
+    }
+  ],
+  "result": [
+    {
+      "item": "tconstruct:lavawood"
+    }
+  ],
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_tconstruct"
+    }
+  ]
+}

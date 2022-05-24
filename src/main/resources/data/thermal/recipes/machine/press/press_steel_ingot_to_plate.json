@@ -1,0 +1,17 @@
+{
+  "type": "thermal:press",
+  "ingredient": {
+    "tag": "forge:ingots/steel"
+  },
+  "result": [
+    {
+      "item": "thermal:steel_plate"
+    }
+  ],
+  "conditions": [
+    {
+      "flag": "steel",
+      "type": "thermal:flag"
+    }
+  ]
+}

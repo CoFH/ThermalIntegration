@@ -1,0 +1,24 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/steel"
+    },
+    {
+      "item": "thermal:press_coin_die"
+    }
+  ],
+  "result": [
+    {
+      "item": "thermal:steel_coin",
+      "count": 3
+    }
+  ],
+  "energy": 2400,
+  "conditions": [
+    {
+      "flag": "steel",
+      "type": "thermal:flag"
+    }
+  ]
+}

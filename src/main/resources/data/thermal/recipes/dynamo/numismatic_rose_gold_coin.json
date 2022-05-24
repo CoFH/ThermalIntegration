@@ -1,0 +1,13 @@
+{
+  "type": "thermal:numismatic_fuel",
+  "ingredient": {
+    "tag": "forge:coins/rose_gold"
+  },
+  "energy": 48000,
+  "conditions": [
+    {
+      "flag": "rose_gold",
+      "type": "thermal:flag"
+    }
+  ]
+}

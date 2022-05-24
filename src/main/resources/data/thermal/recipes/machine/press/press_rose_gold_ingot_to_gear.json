@@ -1,0 +1,23 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/rose_gold",
+      "count": 4
+    },
+    {
+      "item": "thermal:press_gear_die"
+    }
+  ],
+  "result": [
+    {
+      "item": "thermal:rose_gold_gear"
+    }
+  ],
+  "conditions": [
+    {
+      "flag": "rose_gold",
+      "type": "thermal:flag"
+    }
+  ]
+}

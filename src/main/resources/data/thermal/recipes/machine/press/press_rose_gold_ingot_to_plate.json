@@ -1,0 +1,17 @@
+{
+  "type": "thermal:press",
+  "ingredient": {
+    "tag": "forge:ingots/rose_gold"
+  },
+  "result": [
+    {
+      "item": "thermal:rose_gold_plate"
+    }
+  ],
+  "conditions": [
+    {
+      "flag": "rose_gold",
+      "type": "thermal:flag"
+    }
+  ]
+}

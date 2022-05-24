@@ -1,0 +1,23 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/steel",
+      "count": 4
+    },
+    {
+      "item": "thermal:press_gear_die"
+    }
+  ],
+  "result": [
+    {
+      "item": "thermal:steel_gear"
+    }
+  ],
+  "conditions": [
+    {
+      "flag": "steel",
+      "type": "thermal:flag"
+    }
+  ]
+}
