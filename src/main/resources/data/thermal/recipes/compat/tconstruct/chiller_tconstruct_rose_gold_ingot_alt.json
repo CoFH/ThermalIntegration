@@ -18,20 +18,15 @@
   "energy": 4800,
   "conditions": [
     {
-      "type": "forge:and",
-      "values": [
-        {
-          "type": "thermal:flag",
-          "flag": "mod_tconstruct"
-        },
-        {
-          "type": "forge:not",
-          "value": {
-            "type": "thermal:flag",
-            "flag": "rose_gold"
-          }
-        }
-      ]
+      "type": "thermal:flag",
+      "flag": "mod_tconstruct"
+    },
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "thermal:flag",
+        "flag": "rose_gold"
+      }
     }
   ]
 }

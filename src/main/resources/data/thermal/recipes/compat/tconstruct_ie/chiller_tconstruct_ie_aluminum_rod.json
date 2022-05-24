@@ -17,17 +17,12 @@
   "energy": 2400,
   "conditions": [
     {
-      "type": "forge:and",
-      "values": [
-        {
-          "type": "thermal:flag",
-          "flag": "mod_create"
-        },
-        {
-          "type": "thermal:flag",
-          "flag": "mod_immersiveengineering"
-        }
-      ]
+      "type": "thermal:flag",
+      "flag": "mod_tconstruct"
+    },
+    {
+      "type": "thermal:flag",
+      "flag": "mod_immersiveengineering"
     }
   ]
 }
