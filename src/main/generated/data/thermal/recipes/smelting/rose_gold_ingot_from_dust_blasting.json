@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "thermal:rose_gold_dust"
+  },
+  "result": "thermal:rose_gold_ingot",
+  "experience": 0.0,
+  "cookingtime": 100,
+  "conditions": [
+    {
+      "flag": "rose_gold",
+      "type": "thermal:flag"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "thermal:rose_gold_ingot"
+    }
+  ],
+  "result": {
+    "item": "thermal:rose_gold_nugget",
+    "count": 9
+  },
+  "conditions": [
+    {
+      "flag": "rose_gold",
+      "type": "thermal:flag"
+    }
+  ]
+}
