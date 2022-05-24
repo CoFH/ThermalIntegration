@@ -1,0 +1,36 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "item": "tconstruct:rose_gold_nugget",
+      "count": 9
+    },
+    {
+      "item": "thermal:press_packing_3x3_die"
+    }
+  ],
+  "result": [
+    {
+      "item": "tconstruct:rose_gold_ingot"
+    }
+  ],
+  "energy": 400,
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "thermal:flag",
+          "flag": "mod_tconstruct"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "thermal:flag",
+            "flag": "rose_gold"
+          }
+        }
+      ]
+    }
+  ]
+}

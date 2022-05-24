@@ -2,7 +2,7 @@
   "type": "thermal:chiller",
   "ingredients": [
     {
-      "fluid": "tconstruct:molten_rose_gold",
+      "fluid": "tconstruct:molten_steel",
       "amount": 90
     },
     {
@@ -11,7 +11,7 @@
   ],
   "result": [
     {
-      "item": "thermal:rose_gold_ingot",
+      "item": "thermal:steel_ingot",
       "count": 1
     }
   ],
@@ -26,7 +26,7 @@
         },
         {
           "type": "thermal:flag",
-          "flag": "rose_gold"
+          "flag": "steel"
         }
       ]
     }
