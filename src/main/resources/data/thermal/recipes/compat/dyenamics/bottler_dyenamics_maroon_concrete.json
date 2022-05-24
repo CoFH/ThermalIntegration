@@ -16,8 +16,8 @@
   ],
   "conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "dyenamics"
+      "type": "thermal:flag",
+      "flag": "mod_dyenamics"
     }
   ]
 }

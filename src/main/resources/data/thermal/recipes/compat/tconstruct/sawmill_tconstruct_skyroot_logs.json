@@ -16,8 +16,8 @@
   "energy": 1000,
   "conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "tconstruct"
+      "type": "thermal:flag",
+      "flag": "mod_tconstruct"
     }
   ]
 }

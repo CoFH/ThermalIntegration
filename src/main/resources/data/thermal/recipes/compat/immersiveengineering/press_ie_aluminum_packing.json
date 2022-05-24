@@ -17,8 +17,8 @@
   "energy": 400,
   "conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "immersiveengineering"
+      "type": "thermal:flag",
+      "flag": "mod_immersiveengineering"
     }
   ]
 }

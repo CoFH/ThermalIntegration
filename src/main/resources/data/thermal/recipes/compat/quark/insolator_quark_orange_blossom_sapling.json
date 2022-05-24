@@ -17,8 +17,8 @@
   "water_mod": 3.0,
   "conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "quark"
+      "type": "thermal:flag",
+      "flag": "mod_quark"
     }
   ]
 }

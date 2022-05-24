@@ -1,0 +1,18 @@
+{
+  "type": "thermal:pulverizer_recycle",
+  "ingredient": {
+    "tag": "create:stone_types/diorite"
+  },
+  "result": [
+    {
+      "item": "minecraft:quartz",
+      "chance": 0.25
+    }
+  ],
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_create"
+    }
+  ]
+}

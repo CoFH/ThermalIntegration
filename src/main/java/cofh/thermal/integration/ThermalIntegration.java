@@ -7,6 +7,7 @@ import cofh.thermal.integration.init.TIntItems;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.NewRegistryEvent;
 
 import static cofh.lib.util.constants.Constants.ID_THERMAL_INTEGRATION;
 import static cofh.thermal.lib.common.ThermalFlags.*;
@@ -22,9 +23,18 @@ public class ThermalIntegration {
 
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        TIntConfig.addModConfig("create", "Create");
+        TIntConfig.addModConfig("dyenamics", "Dyenamics");
+        TIntConfig.addModConfig("farmersdelight", "Farmer's Delight");
+        TIntConfig.addModConfig("immersiveengineering", "Immersive Engineering");
+        TIntConfig.addModConfig("quark", "Quark");
+        TIntConfig.addModConfig("refinedstorage", "Refined Storage");
+        TIntConfig.addModConfig("tconstruct", "Tinker's Construct");
+
         COMPAT_CONFIG_MANAGER.register(modEventBus)
-                .addServerConfig(new TIntConfig())
-                .setupServer();
+                .addCommonConfig(new TIntConfig());
+
+        modEventBus.addListener(this::registrySetup);
 
         TIntBlocks.register();
         TIntItems.register();
@@ -34,6 +44,11 @@ public class ThermalIntegration {
 
         setFlag(FLAG_RESOURCE_STEEL, true);
         setFlag(FLAG_RESOURCE_ROSE_GOLD, true);
+    }
+
+    private void registrySetup(final NewRegistryEvent event) {
+
+        COMPAT_CONFIG_MANAGER.setupCommon();
     }
 
 }

@@ -5,7 +5,7 @@
   },
   "result": [
     {
-      "item": "immersiveengineering:aluminum_nugget",
+      "item": "immersiveengineering:nugget_aluminum",
       "count": 9
     }
   ],
@@ -15,12 +15,12 @@
       "type": "forge:and",
       "values": [
         {
-          "type": "forge:mod_loaded",
-          "modid": "create"
+          "type": "thermal:flag",
+          "flag": "mod_create"
         },
         {
-          "type": "forge:mod_loaded",
-          "modid": "immersiveengineering"
+          "type": "thermal:flag",
+          "flag": "mod_immersiveengineering"
         }
       ]
     }

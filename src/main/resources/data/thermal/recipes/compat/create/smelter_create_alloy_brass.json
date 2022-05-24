@@ -26,8 +26,8 @@
   "energy": 3200,
   "conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "create"
+      "type": "thermal:flag",
+      "flag": "mod_create"
     }
   ]
 }

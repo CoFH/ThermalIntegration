@@ -15,8 +15,8 @@
   ],
   "conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "farmersdelight"
+      "type": "thermal:flag",
+      "flag": "mod_farmersdelight"
     }
   ]
 }

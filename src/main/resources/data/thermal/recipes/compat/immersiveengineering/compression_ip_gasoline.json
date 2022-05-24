@@ -7,8 +7,8 @@
   "energy": 135000,
   "conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "immersivepetroleum"
+      "type": "thermal:flag",
+      "flag": "mod_immersivepetroleum"
     }
   ]
 }

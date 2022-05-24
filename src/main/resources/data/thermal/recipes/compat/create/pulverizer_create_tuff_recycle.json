@@ -1,0 +1,30 @@
+{
+  "type": "thermal:pulverizer_recycle",
+  "ingredient": {
+    "tag": "create:stone_types/tuff"
+  },
+  "result": [
+    {
+      "item": "thermal:copper_nugget",
+      "chance": 0.1
+    },
+    {
+      "item": "minecraft:gold_nugget",
+      "chance": 0.1
+    },
+    {
+      "item": "minecraft:iron_nugget",
+      "chance": 0.1
+    },
+    {
+      "item": "create:zinc_nugget",
+      "chance": 0.1
+    }
+  ],
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_create"
+    }
+  ]
+}

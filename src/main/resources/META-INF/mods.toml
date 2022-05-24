@@ -47,6 +47,6 @@ side = "BOTH"
 [[dependencies.thermal_integration]]
 modId = "thermal_foundation"
 mandatory = true
-versionRange = "[1.6,1.7]"
+versionRange = "[1.6.2,1.7]"
 ordering = "AFTER"
 side = "BOTH"
