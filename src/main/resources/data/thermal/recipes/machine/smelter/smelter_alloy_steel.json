@@ -1,0 +1,31 @@
+{
+  "type": "thermal:smelter",
+  "ingredients": [
+    {
+      "value": [
+        {
+          "tag": "forge:ingots/iron"
+        },
+        {
+          "tag": "forge:dusts/iron"
+        }
+      ],
+      "count": 1
+    },
+    {
+      "tag": "forge:coal_coke"
+    }
+  ],
+  "result": [
+    {
+      "item": "thermal:steel_ingot"
+    }
+  ],
+  "energy": 4800,
+  "conditions": [
+    {
+      "flag": "steel",
+      "type": "thermal:flag"
+    }
+  ]
+}

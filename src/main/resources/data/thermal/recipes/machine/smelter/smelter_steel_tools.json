@@ -1,0 +1,19 @@
+{
+  "type": "thermal:smelter_recycle",
+  "ingredient": {
+    "tag": "forge:tools/steel"
+  },
+  "result": [
+    {
+      "item": "thermal:steel_ingot",
+      "count": 1
+    }
+  ],
+  "experience": 0.4,
+  "conditions": [
+    {
+      "flag": "steel",
+      "type": "thermal:flag"
+    }
+  ]
+}
