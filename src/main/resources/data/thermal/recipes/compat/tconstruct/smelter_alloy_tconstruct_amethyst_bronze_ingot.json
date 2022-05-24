@@ -1,0 +1,32 @@
+{
+  "type": "thermal:smelter",
+  "ingredients": [
+    {
+      "value": [
+        {
+          "tag": "forge:ingots/copper"
+        },
+        {
+          "tag": "forge:dusts/copper"
+        }
+      ]
+    },
+    {
+      "tag": "forge:gems/amethyst",
+      "count": 1
+    }
+  ],
+  "result": [
+    {
+      "item": "tconstruct:amethyst_bronze_ingot",
+      "count": 1
+    }
+  ],
+  "energy": 4000,
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_tconstruct"
+    }
+  ]
+}

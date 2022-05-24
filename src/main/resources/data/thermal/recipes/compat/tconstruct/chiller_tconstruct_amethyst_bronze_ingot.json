@@ -2,7 +2,7 @@
   "type": "thermal:chiller",
   "ingredients": [
     {
-      "fluid": "tconstruct:molten_tinkers_bronze",
+      "fluid": "tconstruct:molten_amethyst_bronze",
       "amount": 90
     },
     {
@@ -11,7 +11,7 @@
   ],
   "result": [
     {
-      "item": "tconstruct:tinkers_bronze_ingot",
+      "item": "tconstruct:amethyst_bronze_ingot",
       "count": 1
     }
   ],
