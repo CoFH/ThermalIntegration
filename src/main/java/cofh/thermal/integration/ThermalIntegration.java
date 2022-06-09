@@ -23,6 +23,7 @@ public class ThermalIntegration {
 
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        TIntConfig.addModConfig("biomesoplenty", "Biomes O' Plenty");
         TIntConfig.addModConfig("create", "Create");
         TIntConfig.addModConfig("dyenamics", "Dyenamics");
         TIntConfig.addModConfig("farmersdelight", "Farmer's Delight");

@@ -1,0 +1,23 @@
+{
+  "type": "thermal:sawmill",
+  "ingredient": {
+    "tag": "quark:blossom_logs"
+  },
+  "result": [
+    {
+      "item": "quark:blossom_planks",
+      "count": 6
+    },
+    {
+      "item": "thermal:sawdust",
+      "chance": 1.25
+    }
+  ],
+  "energy": 1000,
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_quark"
+    }
+  ]
+}
