@@ -12,8 +12,8 @@
   "experience": 0.4,
   "conditions": [
     {
-      "flag": "rose_gold",
-      "type": "thermal:flag"
+      "tag": "forge:tools/rose_gold",
+      "type": "cofh_core:tag_exists"
     }
   ]
 }

@@ -12,8 +12,8 @@
   "experience": 1.2,
   "conditions": [
     {
-      "flag": "steel",
-      "type": "thermal:flag"
+      "tag": "forge:armor/steel",
+      "type": "cofh_core:tag_exists"
     }
   ]
 }

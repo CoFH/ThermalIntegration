@@ -12,8 +12,8 @@
   "experience": 1.2,
   "conditions": [
     {
-      "flag": "rose_gold",
-      "type": "thermal:flag"
+      "tag": "forge:armor/rose_gold",
+      "type": "cofh_core:tag_exists"
     }
   ]
 }
