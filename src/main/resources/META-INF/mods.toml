@@ -10,6 +10,7 @@ displayName = "Thermal Integration"
 updateJSONURL = "https://raw.github.com/cofh/version/master/thermal/update_integration.json"
 displayURL = "https://teamcofh.com/"
 logoFile = "thermal_integration.png"
+itemIcon = "thermal:steel_gear"
 credits = "Team CoFH"
 authors = "King Lemming"
 description = '''
