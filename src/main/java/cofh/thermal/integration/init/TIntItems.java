@@ -3,7 +3,7 @@ package cofh.thermal.integration.init;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Rarity;
 
-import static cofh.lib.util.constants.Constants.ID_THERMAL_INTEGRATION;
+import static cofh.lib.util.constants.ModIds.ID_THERMAL_INTEGRATION;
 import static cofh.thermal.core.util.RegistrationHelper.registerMetalSet;
 import static cofh.thermal.lib.common.ThermalFlags.*;
 import static cofh.thermal.lib.common.ThermalItemGroups.THERMAL_ITEMS;

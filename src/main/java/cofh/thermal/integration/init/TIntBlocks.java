@@ -2,7 +2,7 @@ package cofh.thermal.integration.init;
 
 import cofh.thermal.core.init.TCoreBlocks;
 
-import static cofh.lib.util.constants.Constants.ID_THERMAL_INTEGRATION;
+import static cofh.lib.util.constants.ModIds.ID_THERMAL_INTEGRATION;
 import static cofh.thermal.core.util.RegistrationHelper.registerBlock;
 import static cofh.thermal.lib.common.ThermalFlags.*;
 import static cofh.thermal.lib.common.ThermalIDs.ID_ROSE_GOLD_BLOCK;
