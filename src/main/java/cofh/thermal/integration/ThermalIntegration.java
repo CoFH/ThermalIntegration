@@ -4,7 +4,9 @@ import cofh.lib.config.ConfigManager;
 import cofh.thermal.integration.config.TIntConfig;
 import cofh.thermal.integration.init.TIntBlocks;
 import cofh.thermal.integration.init.TIntItems;
+import cofh.thermal.integration.tconstruct.TinkerIntegration;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.NewRegistryEvent;
@@ -37,6 +39,11 @@ public class ThermalIntegration {
                 .addCommonConfig(new TIntConfig());
 
         modEventBus.addListener(this::registrySetup);
+
+        // init tinkers compat
+        if(ModList.get().isLoaded("tconstruct")) {
+            TinkerIntegration.init(modEventBus);
+        }
 
         TIntBlocks.register();
         TIntItems.register();
