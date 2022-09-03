@@ -74,7 +74,8 @@ minecraft {
             args '--all', '--output', file('src/generated/'),
                     '--mod', archivesBaseName,
                     '--existing', sourceSets.main.resources.srcDirs[0],
-                    '--existing-mod', 'thermal'
+                    '--existing-mod', 'thermal',
+                    '--existing-mod', 'tconstruct'
 
             mods {
                 ThermalIntegration {
@@ -90,6 +91,9 @@ dependencies {
 
     implementation fg.deobf("com.teamcofh:cofh_core:${mc_version}-${cofh_core_version}")
     implementation fg.deobf("com.teamcofh:thermal_foundation:${mc_version}-${thermal_foundation_version}")
+
+    implementation fg.deobf("slimeknights.tconstruct:TConstruct:${mc_version}-${tcon_version}")
+    implementation fg.deobf("slimeknights.mantle:Mantle:${mc_version}-${mantle_version}")
 }
 
 signing {
