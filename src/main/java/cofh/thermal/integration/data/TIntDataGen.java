@@ -1,5 +1,6 @@
 package cofh.thermal.integration.data;
 
+import cofh.thermal.integration.tconstruct.data.TinkersDatagen;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -34,6 +35,9 @@ public class TIntDataGen {
 
         gen.addProvider(new TIntLootTableProvider(gen));
         gen.addProvider(new TIntRecipeProvider(gen));
+
+        // load Tinkers Datagen to generate parts, materials and more
+        TinkersDatagen.registerServerProviders(gen, exFileHelper);
     }
 
     private static void registerClientProviders(GatherDataEvent event) {
@@ -43,6 +47,9 @@ public class TIntDataGen {
 
         gen.addProvider(new TIntBlockStateProvider(gen, exFileHelper));
         gen.addProvider(new TIntItemModelProvider(gen, exFileHelper));
+
+        // load Tinkers Datagen to generate parts, materials and more
+        TinkersDatagen.registerClientProviders(gen, exFileHelper);
     }
 
 }
