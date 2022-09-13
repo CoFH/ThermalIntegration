@@ -1,0 +1,23 @@
+{
+  "type": "thermal:bottler",
+  "ingredients": [
+    {
+      "tag": "forge:gems/diamond"
+    },
+    {
+      "fluid": "thermal:redstone",
+      "amount": 250
+    }
+  ],
+  "result": [
+    {
+      "item": "redstone_arsenal:flux_gem"
+    }
+  ],
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_redstone_arsenal"
+    }
+  ]
+}

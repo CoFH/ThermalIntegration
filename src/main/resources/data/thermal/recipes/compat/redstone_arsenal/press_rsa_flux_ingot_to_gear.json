@@ -1,0 +1,23 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "item": "redstone_arsenal:flux_ingot",
+      "count": 4
+    },
+    {
+      "item": "thermal:press_gear_die"
+    }
+  ],
+  "result": [
+    {
+      "item": "redstone_arsenal:flux_gear"
+    }
+  ],
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_redstone_arsenal"
+    }
+  ]
+}

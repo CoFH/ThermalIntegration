@@ -1,0 +1,19 @@
+{
+  "type": "thermal:pulverizer",
+  "ingredient": {
+    "item": "redstone_arsenal:flux_ingot"
+  },
+  "result": [
+    {
+      "item": "redstone_arsenal:flux_dust",
+      "count": 1
+    }
+  ],
+  "energy_mod": 0.5,
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_redstone_arsenal"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "thermal:smelter",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/electrum",
+      "count": 1
+    },
+    {
+      "tag": "forge:dusts/redstone",
+      "count": 4
+    }
+  ],
+  "result": [
+    {
+      "item": "redstone_arsenal:flux_ingot"
+    }
+  ],
+  "energy": 6400,
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_redstone_arsenal"
+    }
+  ]
+}
