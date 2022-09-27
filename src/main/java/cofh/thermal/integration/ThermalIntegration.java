@@ -1,6 +1,6 @@
 package cofh.thermal.integration;
 
-import cofh.lib.config.ConfigManager;
+import cofh.core.config.ConfigManager;
 import cofh.thermal.integration.config.TIntConfig;
 import cofh.thermal.integration.init.TIntBlocks;
 import cofh.thermal.integration.init.TIntItems;
