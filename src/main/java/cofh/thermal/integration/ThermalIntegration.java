@@ -29,9 +29,9 @@ public class ThermalIntegration {
         TIntConfig.addModConfig("farmersdelight", "Farmer's Delight");
         TIntConfig.addModConfig("immersiveengineering", "Immersive Engineering");
         TIntConfig.addModConfig("quark", "Quark");
+        TIntConfig.addModConfig("redstone_arsenal", "Redstone Arsenal");
         TIntConfig.addModConfig("refinedstorage", "Refined Storage");
         TIntConfig.addModConfig("tconstruct", "Tinker's Construct");
-        TIntConfig.addModConfig("redstone_arsenal", "Redstone Arsenal");
 
         COMPAT_CONFIG_MANAGER.register(modEventBus)
                 .addCommonConfig(new TIntConfig());
