@@ -1,10 +1,13 @@
 package cofh.thermal.integration;
 
 import cofh.core.config.ConfigManager;
+import cofh.thermal.core.ThermalCore;
+import cofh.thermal.integration.compat.tconstruct.TConstructPlugin;
 import cofh.thermal.integration.config.TIntConfig;
 import cofh.thermal.integration.init.TIntBlocks;
 import cofh.thermal.integration.init.TIntItems;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.NewRegistryEvent;
@@ -37,6 +40,14 @@ public class ThermalIntegration {
                 .addCommonConfig(new TIntConfig());
 
         modEventBus.addListener(this::registrySetup);
+
+        try {
+            if (ModList.get().isLoaded("tconstruct")) {
+                TConstructPlugin.init(modEventBus);
+            }
+        } catch (Throwable t) {
+            ThermalCore.LOG.error("Something went wrong with TConstruct integration!", t);
+        }
 
         TIntBlocks.register();
         TIntItems.register();

@@ -1,0 +1,12 @@
+{
+  "modifier.thermal": {
+    "pancytopenia": "#FFC787",
+    "radiant": "#FFF1AA",
+    "scorn": "#76F0E5"
+  },
+  "materials.thermal": {
+    "signalum": "#FFC787",
+    "lumium": "#FFF1AA",
+    "enderium": "#76F0E5"
+  }
+}
