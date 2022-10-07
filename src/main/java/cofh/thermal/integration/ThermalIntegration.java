@@ -32,6 +32,7 @@ public class ThermalIntegration {
         TIntConfig.addModConfig("redstone_arsenal", "Redstone Arsenal");
         TIntConfig.addModConfig("refinedstorage", "Refined Storage");
         TIntConfig.addModConfig("tconstruct", "Tinker's Construct");
+        TIntConfig.addModConfig("mysticalagriculture", "Mystical Agriculture");
 
         COMPAT_CONFIG_MANAGER.register(modEventBus)
                 .addCommonConfig(new TIntConfig());

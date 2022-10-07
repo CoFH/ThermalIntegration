@@ -16,19 +16,16 @@
     "energy": 100000,
     "conditions": [
         {
-            "type": "forge:mod_loaded",
-            "modid": "mysticalagriculture"
+            "type": "thermal:flag",
+            "flag": "mod_mysticalagriculture"
         },
         {
             "type": "mysticalagriculture:crop_has_material",
             "crop": "mysticalagriculture:tungsten"
         },
         {
-            "type": "forge:not",
-            "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:ingots/tungsten"
-            }
+            "type": "cofh_core:tag_exists",
+            "tag": "forge:ingots/tungsten"
         }
     ]
 }
