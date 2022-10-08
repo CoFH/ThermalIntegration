@@ -1,27 +1,25 @@
 {
-    "type": "thermal:insolator",
-    "ingredient": {
-        "item": "mysticalagriculture:glowstone_seeds"
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "mysticalagriculture:glowstone_seeds"
+  },
+  "result": [
+    {
+      "item": "mysticalagriculture:glowstone_essence"
     },
-    "result": [
-        {
-            "item": "mysticalagriculture:glowstone_essence",
-            "count": 1
-        },
-        {
-            "item": "mysticalagriculture:glowstone_seeds",
-            "count": 1
-        }
-    ],
-    "energy": 100000,
-    "conditions": [
-        {
-            "type": "thermal:flag",
-            "flag": "mod_mysticalagriculture"
-        },
-        {
-            "type": "mysticalagriculture:crop_has_material",
-            "crop": "mysticalagriculture:glowstone"
-        }
-    ]
+    {
+      "item": "mysticalagriculture:glowstone_seeds"
+    }
+  ],
+  "energy": 100000,
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_mysticalagriculture"
+    },
+    {
+      "type": "mysticalagriculture:crop_has_material",
+      "crop": "mysticalagriculture:glowstone"
+    }
+  ]
 }
