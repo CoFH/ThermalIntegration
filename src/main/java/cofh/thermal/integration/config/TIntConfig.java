@@ -5,6 +5,7 @@ import net.minecraftforge.common.ForgeConfigSpec;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Supplier;
 
 import static cofh.thermal.lib.common.ThermalFlags.*;
 
@@ -53,7 +54,7 @@ public class TIntConfig implements IBaseConfig {
     }
 
     // region CONFIG VARIABLES
-    private ForgeConfigSpec.BooleanValue boolRoseGold;
-    private ForgeConfigSpec.BooleanValue boolSteel;
+    private Supplier<Boolean> boolRoseGold;
+    private Supplier<Boolean> boolSteel;
     // endregion
 }
