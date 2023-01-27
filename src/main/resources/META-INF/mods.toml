@@ -21,7 +21,7 @@ Contains Thermal machine recipes and compatibility for many different mods.
 [[dependencies.thermal_integration]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.18.2,)"
+versionRange = "[1.18.2,1.19)"
 ordering = "AFTER"
 side = "BOTH"
 
@@ -35,14 +35,14 @@ side = "BOTH"
 [[dependencies.thermal_integration]]
 modId = "cofh_core"
 mandatory = true
-versionRange = "[9.1,9.2]"
+versionRange = "[9.2,9.3]"
 ordering = "AFTER"
 side = "BOTH"
 
 [[dependencies.thermal_integration]]
 modId = "thermal"
 mandatory = true
-versionRange = "[9.1,9.2]"
+versionRange = "[9.2,9.3]"
 ordering = "AFTER"
 side = "BOTH"
 
