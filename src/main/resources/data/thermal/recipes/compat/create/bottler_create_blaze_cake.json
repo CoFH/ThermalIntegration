@@ -1,0 +1,23 @@
+{
+  "type": "thermal:bottler",
+  "ingredients": [
+    {
+      "item": "create:blaze_cake_base"
+    },
+    {
+      "fluid": "minecraft:lava",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "create:blaze_cake"
+    }
+  ],
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_create"
+    }
+  ]
+}

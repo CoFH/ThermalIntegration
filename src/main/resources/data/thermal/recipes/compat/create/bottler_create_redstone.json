@@ -1,0 +1,26 @@
+{
+  "type": "thermal:bottler",
+  "ingredients": [
+    {
+      "item": "create:cinder_flour"
+    },
+    {
+      "fluid_tag": "forge:potion",
+      "nbt": {
+        "Potion": "minecraft:strength"
+      },
+      "amount": 25
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:redstone"
+    }
+  ],
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_create"
+    }
+  ]
+}
