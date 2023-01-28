@@ -1,0 +1,23 @@
+{
+  "type": "thermal:bottler",
+  "ingredients": [
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "fluid": "create:chocolate",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "create:chocolate_glazed_berries"
+    }
+  ],
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_create"
+    }
+  ]
+}

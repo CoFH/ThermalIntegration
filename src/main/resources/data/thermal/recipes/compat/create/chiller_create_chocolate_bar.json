@@ -1,0 +1,20 @@
+{
+  "type": "thermal:chiller",
+  "ingredients": [
+    {
+      "fluid": "create:chocolate",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "create:bar_of_chocolate"
+    }
+  ],
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_create"
+    }
+  ]
+}

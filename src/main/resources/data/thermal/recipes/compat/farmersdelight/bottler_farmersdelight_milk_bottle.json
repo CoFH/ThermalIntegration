@@ -1,0 +1,23 @@
+{
+  "type": "thermal:bottler",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "fluid_tag": "forge:milk",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "farmersdelight:milk_bottle"
+    }
+  ],
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_farmersdelight"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "thermal:bottler",
+  "ingredients": [
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "fluid_tag": "forge:milk",
+      "amount": 250
+    }
+  ],
+  "result": [
+    {
+      "item": "create:sweet_roll"
+    }
+  ],
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_create"
+    }
+  ]
+}
