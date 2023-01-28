@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "steel"
+    }
+  ],
   "ingredients": [
     {
       "item": "thermal:steel_block"
     }
   ],
   "result": {
-    "item": "thermal:steel_ingot",
-    "count": 9
-  },
-  "conditions": [
-    {
-      "flag": "steel",
-      "type": "thermal:flag"
-    }
-  ]
+    "count": 9,
+    "item": "thermal:steel_ingot"
+  }
 }

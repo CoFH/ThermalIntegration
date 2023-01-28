@@ -1,15 +1,15 @@
 {
   "type": "minecraft:smelting",
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "steel"
+    }
+  ],
+  "cookingtime": 200,
+  "experience": 0.0,
   "ingredient": {
     "item": "thermal:steel_dust"
   },
-  "result": "thermal:steel_ingot",
-  "experience": 0.0,
-  "cookingtime": 200,
-  "conditions": [
-    {
-      "flag": "steel",
-      "type": "thermal:flag"
-    }
-  ]
+  "result": "thermal:steel_ingot"
 }

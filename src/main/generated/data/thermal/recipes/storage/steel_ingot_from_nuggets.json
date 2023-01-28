@@ -1,25 +1,25 @@
 {
   "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "steel"
+    }
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:nuggets/steel"
+    },
+    "I": {
+      "item": "thermal:steel_nugget"
+    }
+  },
   "pattern": [
     "###",
     "#I#",
     "###"
   ],
-  "key": {
-    "I": {
-      "item": "thermal:steel_nugget"
-    },
-    "#": {
-      "tag": "forge:nuggets/steel"
-    }
-  },
   "result": {
     "item": "thermal:steel_ingot"
-  },
-  "conditions": [
-    {
-      "flag": "steel",
-      "type": "thermal:flag"
-    }
-  ]
+  }
 }
