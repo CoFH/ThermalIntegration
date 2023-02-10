@@ -1,7 +1,0 @@
-// 1.19.2	2023-01-27T22:08:02.1331645	Thermal Integration: Block Tags
-5208f5bdab0acffb361a3cb2128c935447a9e777 data/forge/tags/blocks/storage_blocks.json
-468305f5e0cce04e685f42a32f492fc6a15ee428 data/forge/tags/blocks/storage_blocks/rose_gold.json
-28b525e1d741909be50223cde194a061d3e8ee6a data/forge/tags/blocks/storage_blocks/steel.json
-4c7cb2496d97f7755d1466c4936b6227edc9e718 data/minecraft/tags/blocks/beacon_base_blocks.json
-4c7cb2496d97f7755d1466c4936b6227edc9e718 data/minecraft/tags/blocks/mineable/pickaxe.json
-4c7cb2496d97f7755d1466c4936b6227edc9e718 data/minecraft/tags/blocks/needs_stone_tool.json
