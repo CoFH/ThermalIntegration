@@ -1,0 +1,22 @@
+{
+  "_comment": "========================================================================================================",
+  "_comment": "Thermal Integration",
+  "_comment": "========================================================================================================",
+
+  "block.thermal.rose_gold_block": "ローズゴールドブロック",
+  "block.thermal.steel_block": "鋼鉄ブロック",
+
+  "item.thermal.rose_gold_coin": "ローズゴールドのコイン",
+  "item.thermal.rose_gold_dust": "ローズゴールドの粉",
+  "item.thermal.rose_gold_gear": "ローズゴールドの歯車",
+  "item.thermal.rose_gold_ingot": "ローズゴールドインゴット",
+  "item.thermal.rose_gold_nugget": "ローズゴールド塊",
+  "item.thermal.rose_gold_plate": "ローズゴールドのプレート",
+
+  "item.thermal.steel_coin": "鋼鉄のコイン",
+  "item.thermal.steel_dust": "鋼鉄の粉",
+  "item.thermal.steel_gear": "鋼鉄の歯車",
+  "item.thermal.steel_ingot": "鋼鉄インゴット",
+  "item.thermal.steel_nugget": "鋼鉄塊",
+  "item.thermal.steel_plate": "鋼鉄のプレート"
+}

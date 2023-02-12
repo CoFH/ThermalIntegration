@@ -1,0 +1,22 @@
+{
+  "_comment": "========================================================================================================",
+  "_comment": "Thermal Integration",
+  "_comment": "========================================================================================================",
+
+  "block.thermal.rose_gold_block": "Block of Rose Gold",
+  "block.thermal.steel_block": "Block of Steel",
+
+  "item.thermal.rose_gold_coin": "Rose Gold Coin",
+  "item.thermal.rose_gold_dust": "Rose Gold Blend",
+  "item.thermal.rose_gold_gear": "Rose Gold Gear",
+  "item.thermal.rose_gold_ingot": "Rose Gold Ingot",
+  "item.thermal.rose_gold_nugget": "Rose Gold Nugget",
+  "item.thermal.rose_gold_plate": "Rose Gold Plate",
+
+  "item.thermal.steel_coin": "Steel Coin",
+  "item.thermal.steel_dust": "Steel Blend",
+  "item.thermal.steel_gear": "Steel Gear",
+  "item.thermal.steel_ingot": "Steel Ingot",
+  "item.thermal.steel_nugget": "Steel Nugget",
+  "item.thermal.steel_plate": "Steel Plate"
+}

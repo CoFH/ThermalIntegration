@@ -1,0 +1,22 @@
+{
+  "_comment": "========================================================================================================",
+  "_comment": "Thermal Integration",
+  "_comment": "========================================================================================================",
+
+  "block.thermal.rose_gold_block": "Bloc do'r rose",
+  "block.thermal.steel_block": "Bloc d'acier",
+
+  "item.thermal.rose_gold_coin": "Pièce en or rose",
+  "item.thermal.rose_gold_dust": "Mélange d'or rose",
+  "item.thermal.rose_gold_gear": "Engrenage en or rose",
+  "item.thermal.rose_gold_ingot": "Lingot d'or rose",
+  "item.thermal.rose_gold_nugget": "Pépite d'or rose",
+  "item.thermal.rose_gold_plate": "Plaque d'or rose",
+
+  "item.thermal.steel_coin": "Pièce en acier",
+  "item.thermal.steel_dust": "Mélange d'acier",
+  "item.thermal.steel_gear": "Engrenage en acier",
+  "item.thermal.steel_ingot": "Lingot d'acier",
+  "item.thermal.steel_nugget": "SPépite d'acier",
+  "item.thermal.steel_plate": "Plaque d'acier"
+}
