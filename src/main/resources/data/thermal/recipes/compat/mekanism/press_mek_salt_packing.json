@@ -1,0 +1,24 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "item": "mekanism:salt",
+      "count": 4
+    },
+    {
+      "item": "thermal:press_packing_2x2_die"
+    }
+  ],
+  "result": [
+    {
+      "item": "mekanism:block_salt"
+    }
+  ],
+  "energy": 400,
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_mekanism"
+    }
+  ]
+}

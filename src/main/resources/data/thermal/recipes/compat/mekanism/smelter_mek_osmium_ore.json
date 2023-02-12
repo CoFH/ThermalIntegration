@@ -1,0 +1,34 @@
+{
+  "type": "thermal:pulverizer",
+  "ingredient": {
+    "value": [
+      {
+        "item": "mekanism:osmium_ore"
+      },
+      {
+        "item": "mekanism:deepslate_osmium_ore"
+      }
+    ]
+  },
+  "result": [
+    {
+      "item": "mekanism:ingot_osmium",
+      "chance": 1.0
+    },
+    {
+      "item": "minecraft:copper_ingot",
+      "chance": 0.2
+    },
+    {
+      "item": "thermal:rich_slag",
+      "chance": 0.2
+    }
+  ],
+  "experience": 0.2,
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_mekanism"
+    }
+  ]
+}

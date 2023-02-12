@@ -1,0 +1,25 @@
+{
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "mysticalagriculture:deepslate_seeds"
+  },
+  "result": [
+    {
+      "item": "mysticalagriculture:deepslate_essence"
+    },
+    {
+      "item": "mysticalagriculture:deepslate_seeds"
+    }
+  ],
+  "energy": 100000,
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_mysticalagriculture"
+    },
+    {
+      "type": "mysticalagriculture:crop_has_material",
+      "crop": "mysticalagriculture:deepslate"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "type": "thermal:pulverizer",
+  "ingredient": {
+    "value": [
+      {
+        "item": "mekanism:osmium_ore"
+      },
+      {
+        "item": "mekanism:deepslate_osmium_ore"
+      }
+    ]
+  },
+  "result": [
+    {
+      "item": "mekanism:dust_osmium",
+      "chance": 2.0
+    },
+    {
+      "item": "thermal:copper_dust",
+      "chance": 0.1
+    },
+    {
+      "item": "minecraft:gravel",
+      "chance": 0.2
+    }
+  ],
+  "experience": 0.2,
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_mekanism"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "mysticalagriculture:platinum_seeds"
+  },
+  "result": [
+    {
+      "item": "mysticalagriculture:platinum_essence"
+    },
+    {
+      "item": "mysticalagriculture:platinum_seeds"
+    }
+  ],
+  "energy": 100000,
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_mysticalagriculture"
+    },
+    {
+      "type": "mysticalagriculture:crop_has_material",
+      "crop": "mysticalagriculture:platinum"
+    },
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/platinum"
+    }
+  ]
+}

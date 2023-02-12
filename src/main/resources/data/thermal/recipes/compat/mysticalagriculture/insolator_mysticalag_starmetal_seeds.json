@@ -1,0 +1,25 @@
+{
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "mysticalagriculture:starmetal_seeds"
+  },
+  "result": [
+    {
+      "item": "mysticalagriculture:starmetal_essence"
+    },
+    {
+      "item": "mysticalagriculture:starmetal_seeds"
+    }
+  ],
+  "energy": 100000,
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_mysticalagriculture"
+    },
+    {
+      "type": "mysticalagriculture:crop_has_material",
+      "crop": "mysticalagriculture:starmetal"
+    }
+  ]
+}

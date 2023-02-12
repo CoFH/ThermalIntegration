@@ -1,0 +1,25 @@
+{
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "mysticalagriculture:end_seeds"
+  },
+  "result": [
+    {
+      "item": "mysticalagriculture:end_essence"
+    },
+    {
+      "item": "mysticalagriculture:end_seeds"
+    }
+  ],
+  "energy": 100000,
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_mysticalagriculture"
+    },
+    {
+      "type": "mysticalagriculture:crop_has_material",
+      "crop": "mysticalagriculture:end"
+    }
+  ]
+}
