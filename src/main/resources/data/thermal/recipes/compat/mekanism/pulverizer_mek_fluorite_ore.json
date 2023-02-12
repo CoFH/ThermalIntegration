@@ -1,0 +1,30 @@
+{
+  "type": "thermal:pulverizer",
+  "ingredient": {
+    "value": [
+      {
+        "item": "mekanism:fluorite_ore"
+      },
+      {
+        "item": "mekanism:deepslate_fluorite_ore"
+      }
+    ]
+  },
+  "result": [
+    {
+      "item": "mekanism:fluorite_gem",
+      "chance": 6.5
+    },
+    {
+      "item": "minecraft:gravel",
+      "chance": 0.2
+    }
+  ],
+  "experience": 0.5,
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_mekanism"
+    }
+  ]
+}

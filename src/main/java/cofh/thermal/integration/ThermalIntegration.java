@@ -28,6 +28,7 @@ public class ThermalIntegration {
         TIntConfig.addModConfig("dyenamics", "Dyenamics");
         TIntConfig.addModConfig("farmersdelight", "Farmer's Delight");
         TIntConfig.addModConfig("immersiveengineering", "Immersive Engineering");
+        TIntConfig.addModConfig("mekanism", "Mekanism");
         TIntConfig.addModConfig("mysticalagriculture", "Mystical Agriculture");
         TIntConfig.addModConfig("quark", "Quark");
         TIntConfig.addModConfig("redstone_arsenal", "Redstone Arsenal");

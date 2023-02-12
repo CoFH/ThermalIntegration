@@ -1,0 +1,23 @@
+{
+  "type": "thermal:pulverizer",
+  "ingredient": {
+    "item": "create:raw_zinc"
+  },
+  "result": [
+    {
+      "item": "create:crushed_zinc_ore",
+      "chance": 1.25
+    },
+    {
+      "item": "thermal:sulfur",
+      "chance": 0.2
+    }
+  ],
+  "experience": 0.1,
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_create"
+    }
+  ]
+}

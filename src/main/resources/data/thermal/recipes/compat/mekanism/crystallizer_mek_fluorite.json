@@ -1,0 +1,23 @@
+{
+  "type": "thermal:crystallizer",
+  "ingredients": [
+    {
+      "fluid": "minecraft:water",
+      "amount": 2000
+    },
+    {
+      "item": "mekanism:dust_fluorite"
+    }
+  ],
+  "result": [
+    {
+      "item": "mekanism:fluorite_gem"
+    }
+  ],
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_mekanism"
+    }
+  ]
+}
