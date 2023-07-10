@@ -1,11 +1,11 @@
 {
   "type": "thermal:smelter",
   "ingredient": {
-    "item": "create:crushed_lead_ore"
+    "item": "create:crushed_raw_copper"
   },
   "result": [
     {
-      "item": "thermal:lead_ingot",
+      "item": "minecraft:copper_ingot",
       "count": 1
     }
   ],

@@ -1,16 +1,16 @@
 {
   "type": "thermal:centrifuge",
   "ingredient": {
-    "item": "create:crushed_zinc_ore"
+    "item": "create:crushed_raw_tin"
   },
   "result": [
     {
-      "item": "create:zinc_nugget",
+      "item": "thermal:tin_nugget",
       "count": 9
     },
     {
-      "item": "minecraft:gunpowder",
-      "chance": 0.25
+      "item": "thermal:apatite",
+      "chance": 0.12
     }
   ],
   "energy": 1600,

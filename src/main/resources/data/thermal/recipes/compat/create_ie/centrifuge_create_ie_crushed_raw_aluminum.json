@@ -1,16 +1,12 @@
 {
   "type": "thermal:centrifuge",
   "ingredient": {
-    "item": "create:crushed_tin_ore"
+    "item": "create:crushed_raw_aluminum"
   },
   "result": [
     {
-      "item": "thermal:tin_nugget",
+      "item": "immersiveengineering:nugget_aluminum",
       "count": 9
-    },
-    {
-      "item": "thermal:apatite",
-      "chance": 0.12
     }
   ],
   "energy": 1600,
@@ -18,6 +14,10 @@
     {
       "type": "thermal:flag",
       "flag": "mod_create"
+    },
+    {
+      "type": "thermal:flag",
+      "flag": "mod_immersiveengineering"
     }
   ]
 }

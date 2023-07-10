@@ -1,11 +1,11 @@
 {
   "type": "thermal:smelter",
   "ingredient": {
-    "item": "create:crushed_zinc_ore"
+    "item": "create:crushed_raw_iron"
   },
   "result": [
     {
-      "item": "create:zinc_ingot",
+      "item": "minecraft:iron_ingot",
       "count": 1
     }
   ],
