@@ -6,13 +6,13 @@
         "item": "create:zinc_ore"
       },
       {
-        "item": "create:deepslate_zinc_ore"
+        "item": "create:deepslate_zinc"
       }
     ]
   },
   "result": [
     {
-      "item": "create:crushed_zinc_ore",
+      "item": "create:crushed_raw_zinc",
       "chance": 2.0
     },
     {

@@ -1,11 +1,11 @@
 {
   "type": "thermal:smelter",
   "ingredient": {
-    "item": "create:crushed_uranium_ore"
+    "item": "create:crushed_raw_gold"
   },
   "result": [
     {
-      "item": "immersiveengineering:ingot_uranium",
+      "item": "minecraft:gold_ingot",
       "count": 1
     }
   ],
@@ -15,10 +15,6 @@
     {
       "type": "thermal:flag",
       "flag": "mod_create"
-    },
-    {
-      "type": "thermal:flag",
-      "flag": "mod_immersiveengineering"
     }
   ]
 }

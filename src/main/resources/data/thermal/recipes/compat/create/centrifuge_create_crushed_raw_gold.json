@@ -1,16 +1,16 @@
 {
   "type": "thermal:centrifuge",
   "ingredient": {
-    "item": "create:crushed_nickel_ore"
+    "item": "create:crushed_raw_gold"
   },
   "result": [
     {
-      "item": "thermal:nickel_nugget",
+      "item": "minecraft:gold_nugget",
       "count": 9
     },
     {
-      "item": "thermal:copper_nugget",
-      "chance": 0.25
+      "item": "minecraft:quartz",
+      "chance": 0.5
     }
   ],
   "energy": 1600,

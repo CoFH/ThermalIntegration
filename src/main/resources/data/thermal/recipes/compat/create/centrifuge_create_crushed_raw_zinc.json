@@ -1,15 +1,15 @@
 {
   "type": "thermal:centrifuge",
   "ingredient": {
-    "item": "create:crushed_silver_ore"
+    "item": "create:crushed_raw_zinc"
   },
   "result": [
     {
-      "item": "thermal:silver_nugget",
+      "item": "create:zinc_nugget",
       "count": 9
     },
     {
-      "item": "thermal:lead_nugget",
+      "item": "minecraft:gunpowder",
       "chance": 0.25
     }
   ],

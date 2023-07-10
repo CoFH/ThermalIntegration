@@ -1,7 +1,7 @@
 {
   "type": "thermal:smelter",
   "ingredient": {
-    "item": "create:crushed_tin_ore"
+    "item": "create:crushed_raw_tin"
   },
   "result": [
     {

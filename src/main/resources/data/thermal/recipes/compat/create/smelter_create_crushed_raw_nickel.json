@@ -1,7 +1,7 @@
 {
   "type": "thermal:smelter",
   "ingredient": {
-    "item": "create:crushed_nickel_ore"
+    "item": "create:crushed_raw_nickel"
   },
   "result": [
     {

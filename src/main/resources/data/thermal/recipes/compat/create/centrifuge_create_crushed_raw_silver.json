@@ -1,12 +1,16 @@
 {
   "type": "thermal:centrifuge",
   "ingredient": {
-    "item": "create:crushed_uranium_ore"
+    "item": "create:crushed_raw_silver"
   },
   "result": [
     {
-      "item": "immersiveengineering:nugget_uranium",
+      "item": "thermal:silver_nugget",
       "count": 9
+    },
+    {
+      "item": "thermal:lead_nugget",
+      "chance": 0.25
     }
   ],
   "energy": 1600,
@@ -14,10 +18,6 @@
     {
       "type": "thermal:flag",
       "flag": "mod_create"
-    },
-    {
-      "type": "thermal:flag",
-      "flag": "mod_immersiveengineering"
     }
   ]
 }
