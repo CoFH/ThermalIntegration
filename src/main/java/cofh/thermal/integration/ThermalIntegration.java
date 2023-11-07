@@ -1,16 +1,16 @@
 package cofh.thermal.integration;
 
-import cofh.core.config.ConfigManager;
-import cofh.thermal.integration.config.TIntConfig;
-import cofh.thermal.integration.init.TIntBlocks;
-import cofh.thermal.integration.init.TIntItems;
+import cofh.core.common.config.ConfigManager;
+import cofh.thermal.integration.common.config.TIntConfig;
+import cofh.thermal.integration.init.registries.TIntBlocks;
+import cofh.thermal.integration.init.registries.TIntItems;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.NewRegistryEvent;
 
 import static cofh.lib.util.constants.ModIds.ID_THERMAL_INTEGRATION;
-import static cofh.thermal.lib.common.ThermalFlags.*;
+import static cofh.thermal.lib.init.ThermalFlags.*;
 
 @Mod (ID_THERMAL_INTEGRATION)
 public class ThermalIntegration {

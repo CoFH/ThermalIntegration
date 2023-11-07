@@ -1,7 +1,7 @@
-package cofh.thermal.integration.data.providers;
+package cofh.thermal.integration.init.data.providers;
 
-import cofh.lib.data.RecipeProviderCoFH;
-import cofh.thermal.lib.common.ThermalFlags;
+import cofh.lib.init.data.RecipeProviderCoFH;
+import cofh.thermal.lib.init.ThermalFlags;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
 
@@ -9,8 +9,8 @@ import java.util.function.Consumer;
 
 import static cofh.lib.util.constants.ModIds.ID_THERMAL;
 import static cofh.thermal.core.ThermalCore.ITEMS;
-import static cofh.thermal.lib.common.ThermalFlags.FLAG_RESOURCE_ROSE_GOLD;
-import static cofh.thermal.lib.common.ThermalFlags.FLAG_RESOURCE_STEEL;
+import static cofh.thermal.lib.init.ThermalFlags.FLAG_RESOURCE_ROSE_GOLD;
+import static cofh.thermal.lib.init.ThermalFlags.FLAG_RESOURCE_STEEL;
 
 public class TIntRecipeProvider extends RecipeProviderCoFH {
 

@@ -1,12 +1,12 @@
-package cofh.thermal.integration.config;
+package cofh.thermal.integration.common.config;
 
-import cofh.core.config.IBaseConfig;
+import cofh.core.common.config.IBaseConfig;
 import net.minecraftforge.common.ForgeConfigSpec;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static cofh.thermal.lib.common.ThermalFlags.*;
+import static cofh.thermal.lib.init.ThermalFlags.*;
 
 public class TIntConfig implements IBaseConfig {
 

@@ -1,4 +1,4 @@
-package cofh.thermal.integration.init;
+package cofh.thermal.integration.init.registries;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
@@ -6,9 +6,9 @@ import net.minecraft.world.level.material.MapColor;
 
 import static cofh.lib.util.constants.ModIds.ID_THERMAL_INTEGRATION;
 import static cofh.thermal.core.util.RegistrationHelper.registerBlock;
-import static cofh.thermal.lib.common.ThermalCreativeTabs.blocksTab;
-import static cofh.thermal.lib.common.ThermalIDs.ID_ROSE_GOLD_BLOCK;
-import static cofh.thermal.lib.common.ThermalIDs.ID_STEEL_BLOCK;
+import static cofh.thermal.lib.init.ThermalCreativeTabs.blocksTab;
+import static cofh.thermal.lib.init.ThermalIDs.ID_ROSE_GOLD_BLOCK;
+import static cofh.thermal.lib.init.ThermalIDs.ID_STEEL_BLOCK;
 import static net.minecraft.world.level.block.state.BlockBehaviour.Properties.of;
 
 public class TIntBlocks {

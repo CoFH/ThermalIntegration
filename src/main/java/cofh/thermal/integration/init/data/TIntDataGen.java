@@ -1,6 +1,6 @@
-package cofh.thermal.integration.data;
+package cofh.thermal.integration.init.data;
 
-import cofh.thermal.integration.data.providers.*;
+import cofh.thermal.integration.init.data.providers.*;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.ExistingFileHelper;

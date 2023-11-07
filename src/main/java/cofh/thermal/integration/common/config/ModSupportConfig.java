@@ -1,10 +1,10 @@
-package cofh.thermal.integration.config;
+package cofh.thermal.integration.common.config;
 
-import cofh.core.config.IBaseConfig;
+import cofh.core.common.config.IBaseConfig;
 import net.minecraftforge.common.ForgeConfigSpec;
 
 import static cofh.lib.util.Utils.isModLoaded;
-import static cofh.thermal.lib.common.ThermalFlags.setFlag;
+import static cofh.thermal.lib.init.ThermalFlags.setFlag;
 
 public class ModSupportConfig implements IBaseConfig {
 

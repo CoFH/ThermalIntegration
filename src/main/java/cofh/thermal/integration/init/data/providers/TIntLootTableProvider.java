@@ -1,7 +1,7 @@
-package cofh.thermal.integration.data.providers;
+package cofh.thermal.integration.init.data.providers;
 
-import cofh.lib.data.LootTableProviderCoFH;
-import cofh.thermal.integration.data.tables.TIntBlockLootTables;
+import cofh.lib.init.data.LootTableProviderCoFH;
+import cofh.thermal.integration.init.data.tables.TIntBlockLootTables;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 

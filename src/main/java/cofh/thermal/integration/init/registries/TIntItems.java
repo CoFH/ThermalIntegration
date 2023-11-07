@@ -1,4 +1,4 @@
-package cofh.thermal.integration.init;
+package cofh.thermal.integration.init.registries;
 
 import net.minecraft.world.item.Rarity;
 
