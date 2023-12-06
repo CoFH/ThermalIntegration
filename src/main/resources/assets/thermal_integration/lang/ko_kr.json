@@ -1,0 +1,22 @@
+{
+  "_comment": "========================================================================================================",
+  "_comment": "Thermal Integration",
+  "_comment": "========================================================================================================",
+
+  "block.thermal.rose_gold_block": "로즈 골드 블록",
+  "block.thermal.steel_block": "강철 블록",
+
+  "item.thermal.rose_gold_coin": "로즈 골드 동전",
+  "item.thermal.rose_gold_dust": "로즈 골드 혼합 가루",
+  "item.thermal.rose_gold_gear": "로즈 골드 기어",
+  "item.thermal.rose_gold_ingot": "로즈 골드 주괴",
+  "item.thermal.rose_gold_nugget": "로즈 골드 조각",
+  "item.thermal.rose_gold_plate": "로즈 골드 판",
+
+  "item.thermal.steel_coin": "강철 동전",
+  "item.thermal.steel_dust": "강철 혼합 가루",
+  "item.thermal.steel_gear": "강철 기어",
+  "item.thermal.steel_ingot": "강철 주괴",
+  "item.thermal.steel_nugget": "강철 조각",
+  "item.thermal.steel_plate": "강철 판"
+}
