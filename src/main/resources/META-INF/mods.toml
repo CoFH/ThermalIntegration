@@ -21,7 +21,7 @@ Contains Thermal machine recipes and compatibility for many different mods.
 [[dependencies.thermal_integration]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[${mc_version},)"
+versionRange = "1.20.1"
 ordering = "AFTER"
 side = "BOTH"
 
