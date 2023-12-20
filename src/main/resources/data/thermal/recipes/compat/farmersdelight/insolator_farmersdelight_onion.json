@@ -9,6 +9,7 @@
       "chance": 2.5
     }
   ],
+  "experience": 0.15,
   "conditions": [
     {
       "type": "thermal:flag",
