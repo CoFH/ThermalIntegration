@@ -23,8 +23,8 @@ public class TIntBlocks {
         //        registerBlock(ID_ALUMINUM_BLOCK, TCoreBlocks::storageBlock, getFlag(FLAG_RESOURCE_ALUMINUM));
         //        registerBlock(ID_URANIUM_BLOCK, TCoreBlocks::storageBlock, getFlag(FLAG_RESOURCE_URANIUM));
 
-        blocksTab(registerBlock(ID_STEEL_BLOCK, () -> new Block(of().mapColor(MapColor.COLOR_GRAY).strength(5.0F, 6.0F).sound(SoundType.METAL).requiresCorrectToolForDrops()), ID_THERMAL_INTEGRATION));
-        blocksTab(registerBlock(ID_ROSE_GOLD_BLOCK, () -> new Block(of().mapColor(MapColor.COLOR_PINK).strength(5.0F, 6.0F).sound(SoundType.METAL).requiresCorrectToolForDrops()), ID_THERMAL_INTEGRATION));
+        blocksTab(25, registerBlock(ID_STEEL_BLOCK, () -> new Block(of().mapColor(MapColor.COLOR_GRAY).strength(5.0F, 6.0F).sound(SoundType.METAL).requiresCorrectToolForDrops()), ID_THERMAL_INTEGRATION));
+        blocksTab(25, registerBlock(ID_ROSE_GOLD_BLOCK, () -> new Block(of().mapColor(MapColor.COLOR_PINK).strength(5.0F, 6.0F).sound(SoundType.METAL).requiresCorrectToolForDrops()), ID_THERMAL_INTEGRATION));
     }
 
 }
