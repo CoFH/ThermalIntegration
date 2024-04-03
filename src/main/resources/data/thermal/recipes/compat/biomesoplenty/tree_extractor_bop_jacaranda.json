@@ -1,10 +1,22 @@
 {
   "type": "thermal:tree_extractor",
-  "trunk": "biomesoplenty:jacaranda_log",
-  "leaves": "biomesoplenty:jacaranda_leaves",
+  "trunk": {
+    "block": "biomesoplenty:jacaranda_log"
+  },
+  "leaves": {
+    "block": "biomesoplenty:jacaranda_leaves",
+    "properties": {
+      "persistent": "false"
+    }
+  },
+  "sapling": "biomesoplenty:jacaranda_sapling",
+  "min_height": 4,
+  "max_height": 10,
+  "min_leaves": 16,
+  "max_leaves": 24,
   "result": {
     "fluid": "thermal:resin",
-    "amount": 25
+    "amount": 15
   },
   "conditions": [
     {

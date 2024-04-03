@@ -1,10 +1,22 @@
 {
   "type": "thermal:tree_extractor",
-  "trunk": "minecraft:oak_log",
-  "leaves": "biomesoplenty:maple_leaves",
+  "trunk": {
+    "block": "minecraft:oak_log"
+  },
+  "leaves": {
+    "block": "biomesoplenty:maple_leaves",
+    "properties": {
+      "persistent": "false"
+    }
+  },
+  "sapling": "biomesoplenty:maple_sapling",
+  "min_height": 4,
+  "max_height": 10,
+  "min_leaves": 16,
+  "max_leaves": 24,
   "result": {
     "fluid": "thermal:sap",
-    "amount": 25
+    "amount": 30
   },
   "conditions": [
     {

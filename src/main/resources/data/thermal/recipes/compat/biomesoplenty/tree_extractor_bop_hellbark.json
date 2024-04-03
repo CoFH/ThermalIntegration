@@ -1,10 +1,22 @@
 {
   "type": "thermal:tree_extractor",
-  "trunk": "biomesoplenty:hellbark_log",
-  "leaves": "biomesoplenty:hellbark_leaves",
+  "trunk": {
+    "block": "biomesoplenty:hellbark_log"
+  },
+  "leaves": {
+    "block": "biomesoplenty:hellbark_leaves",
+    "properties": {
+      "persistent": "false"
+    }
+  },
+  "sapling": "biomesoplenty:hellbark_sapling",
+  "min_height": 6,
+  "max_height": 12,
+  "min_leaves": 12,
+  "max_leaves": 18,
   "result": {
     "fluid": "minecraft:lava",
-    "amount": 25
+    "amount": 10
   },
   "conditions": [
     {

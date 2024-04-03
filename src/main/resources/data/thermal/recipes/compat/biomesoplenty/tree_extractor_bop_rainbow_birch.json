@@ -1,10 +1,25 @@
 {
   "type": "thermal:tree_extractor",
-  "trunk": "minecraft:birch_log",
-  "leaves": "biomesoplenty:rainbow_birch_leaves",
+  "trunk": {
+    "block": "minecraft:birch_log",
+    "properties": {
+      "axis": "y"
+    }
+  },
+  "leaves": {
+    "block": "biomesoplenty:rainbow_birch_leaves",
+    "properties": {
+      "persistent": "false"
+    }
+  },
+  "sapling": "biomesoplenty:rainbow_birch_sapling",
+  "min_height": 4,
+  "max_height": 12,
+  "min_leaves": 16,
+  "max_leaves": 24,
   "result": {
-    "fluid": "thermal:resin",
-    "amount": 25
+    "fluid": "thermal:sap",
+    "amount": 15
   },
   "conditions": [
     {

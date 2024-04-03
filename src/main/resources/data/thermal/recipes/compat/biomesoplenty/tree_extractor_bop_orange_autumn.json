@@ -1,10 +1,22 @@
 {
   "type": "thermal:tree_extractor",
-  "trunk": "minecraft:oak_log",
-  "leaves": "biomesoplenty:orange_autumn_leaves",
+  "trunk": {
+    "block": "minecraft:dark_oak_log"
+  },
+  "leaves": {
+    "block": "biomesoplenty:orange_autumn_leaves",
+    "properties": {
+      "persistent": "false"
+    }
+  },
+  "sapling": "biomesoplenty:orange_autumn_sapling",
+  "min_height": 4,
+  "max_height": 10,
+  "min_leaves": 16,
+  "max_leaves": 24,
   "result": {
     "fluid": "thermal:resin",
-    "amount": 25
+    "amount": 15
   },
   "conditions": [
     {

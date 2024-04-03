@@ -1,10 +1,25 @@
 {
   "type": "thermal:tree_extractor",
-  "trunk": "biomesoplenty:willow_log",
-  "leaves": "biomesoplenty:willow_leaves",
+  "trunk": {
+    "block": "biomesoplenty:willow_log",
+    "properties": {
+      "axis": "y"
+    }
+  },
+  "leaves": {
+    "block": "biomesoplenty:willow_leaves",
+    "properties": {
+      "persistent": "false"
+    }
+  },
+  "sapling": "biomesoplenty:willow_sapling",
+  "min_height": 8,
+  "max_height": 16,
+  "min_leaves": 16,
+  "max_leaves": 24,
   "result": {
     "fluid": "thermal:resin",
-    "amount": 25
+    "amount": 15
   },
   "conditions": [
     {

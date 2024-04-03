@@ -1,10 +1,25 @@
 {
   "type": "thermal:tree_extractor",
-  "trunk": "biomesoplenty:palm_log",
-  "leaves": "biomesoplenty:palm_leaves",
+  "trunk": {
+    "block": "biomesoplenty:palm_log",
+    "properties": {
+      "axis": "y"
+    }
+  },
+  "leaves": {
+    "block": "biomesoplenty:palm_leaves",
+    "properties": {
+      "persistent": "false"
+    }
+  },
+  "sapling": "biomesoplenty:palm_sapling",
+  "min_height": 8,
+  "max_height": 12,
+  "min_leaves": 16,
+  "max_leaves": 24,
   "result": {
     "fluid": "thermal:resin",
-    "amount": 25
+    "amount": 15
   },
   "conditions": [
     {

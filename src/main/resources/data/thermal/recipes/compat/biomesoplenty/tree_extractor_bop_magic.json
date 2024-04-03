@@ -1,15 +1,24 @@
 {
   "type": "thermal:tree_extractor",
-  "trunk": "biomesoplenty:magic_log",
-  "leaves": "biomesoplenty:magic_leaves",
+  "trunk": {
+    "block": "biomesoplenty:magic_log",
+    "properties": {
+      "axis": "y"
+    }
+  },
+  "leaves": {
+    "block": "biomesoplenty:magic_leaves",
+    "properties": {
+      "persistent": "false"
+    }
+  },
+  "sapling": "biomesoplenty:magic_sapling",
+  "min_height": 6,
+  "max_height": 12,
+  "min_leaves": 16,
+  "max_leaves": 24,
   "result": {
     "fluid": "thermal:resin",
-    "amount": 25
-  },
-  "conditions": [
-    {
-      "type": "thermal:flag",
-      "flag": "mod_biomesoplenty"
-    }
-  ]
+    "amount": 15
+  }
 }

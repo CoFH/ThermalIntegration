@@ -1,10 +1,22 @@
 {
   "type": "thermal:tree_extractor",
-  "trunk": "biomesoplenty:fir_log",
-  "leaves": "biomesoplenty:fir_leaves",
+  "trunk": {
+    "block": "biomesoplenty:fir_log"
+  },
+  "leaves": {
+    "block": "biomesoplenty:fir_leaves",
+    "properties": {
+      "persistent": "false"
+    }
+  },
+  "sapling": "biomesoplenty:fir_sapling",
+  "min_height": 3,
+  "max_height": 16,
+  "min_leaves": 6,
+  "max_leaves": 24,
   "result": {
     "fluid": "thermal:resin",
-    "amount": 50
+    "amount": 15
   },
   "conditions": [
     {
