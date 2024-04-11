@@ -13,7 +13,7 @@
         "persistent": "false"
       }
     },
-	{
+    {
       "block": "minecraft:oak_leaves",
       "properties": {
         "persistent": "false"
