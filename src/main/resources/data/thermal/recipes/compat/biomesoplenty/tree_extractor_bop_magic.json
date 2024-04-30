@@ -20,5 +20,11 @@
   "result": {
     "fluid": "thermal:resin",
     "amount": 15
-  }
+  },
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_biomesoplenty"
+    }
+  ]
 }
