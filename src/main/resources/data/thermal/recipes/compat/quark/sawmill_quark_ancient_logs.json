@@ -1,11 +1,11 @@
 {
   "type": "thermal:sawmill",
   "ingredient": {
-    "tag": "biomesoplenty:cherry_logs"
+    "tag": "quark:ancient_logs"
   },
   "result": [
     {
-      "item": "biomesoplenty:cherry_planks",
+      "item": "quark:ancient_planks",
       "count": 6
     },
     {
@@ -14,10 +14,11 @@
     }
   ],
   "energy": 1000,
+  "experience": 0.15,
   "conditions": [
     {
       "type": "thermal:flag",
-      "flag": "mod_biomesoplenty"
+      "flag": "mod_quark"
     }
   ]
 }
