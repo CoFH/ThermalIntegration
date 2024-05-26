@@ -1,11 +1,11 @@
 {
   "type": "thermal:tree_extractor",
   "trunk": {
-    "block": "biomesoplenty:hellbark_log"
+    "Name": "biomesoplenty:hellbark_log"
   },
   "leaves": {
-    "block": "biomesoplenty:hellbark_leaves",
-    "properties": {
+    "Name": "biomesoplenty:hellbark_leaves",
+    "Properties": {
       "persistent": "false"
     }
   },

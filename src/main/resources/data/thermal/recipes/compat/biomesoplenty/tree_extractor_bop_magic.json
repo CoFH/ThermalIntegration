@@ -1,14 +1,14 @@
 {
   "type": "thermal:tree_extractor",
   "trunk": {
-    "block": "biomesoplenty:magic_log",
-    "properties": {
+    "Name": "biomesoplenty:magic_log",
+    "Properties": {
       "axis": "y"
     }
   },
   "leaves": {
-    "block": "biomesoplenty:magic_leaves",
-    "properties": {
+    "Name": "biomesoplenty:magic_leaves",
+    "Properties": {
       "persistent": "false"
     }
   },

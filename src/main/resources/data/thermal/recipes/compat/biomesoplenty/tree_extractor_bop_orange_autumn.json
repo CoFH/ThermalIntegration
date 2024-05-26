@@ -1,11 +1,11 @@
 {
   "type": "thermal:tree_extractor",
   "trunk": {
-    "block": "minecraft:dark_oak_log"
+    "Name": "minecraft:dark_oak_log"
   },
   "leaves": {
-    "block": "biomesoplenty:orange_autumn_leaves",
-    "properties": {
+    "Name": "biomesoplenty:orange_autumn_leaves",
+    "Properties": {
       "persistent": "false"
     }
   },

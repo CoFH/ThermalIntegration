@@ -1,14 +1,14 @@
 {
   "type": "thermal:tree_extractor",
   "trunk": {
-    "block": "biomesoplenty:willow_log",
-    "properties": {
+    "Name": "biomesoplenty:willow_log",
+    "Properties": {
       "axis": "y"
     }
   },
   "leaves": {
-    "block": "biomesoplenty:willow_leaves",
-    "properties": {
+    "Name": "biomesoplenty:willow_leaves",
+    "Properties": {
       "persistent": "false"
     }
   },

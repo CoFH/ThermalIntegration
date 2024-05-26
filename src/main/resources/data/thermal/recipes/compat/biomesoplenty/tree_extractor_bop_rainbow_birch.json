@@ -1,14 +1,14 @@
 {
   "type": "thermal:tree_extractor",
   "trunk": {
-    "block": "minecraft:birch_log",
-    "properties": {
+    "Name": "minecraft:birch_log",
+    "Properties": {
       "axis": "y"
     }
   },
   "leaves": {
-    "block": "biomesoplenty:rainbow_birch_leaves",
-    "properties": {
+    "Name": "biomesoplenty:rainbow_birch_leaves",
+    "Properties": {
       "persistent": "false"
     }
   },

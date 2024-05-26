@@ -1,14 +1,14 @@
 {
   "type": "thermal:tree_extractor",
   "trunk": {
-    "block": "biomesoplenty:redwood_log",
-    "properties": {
+    "Name": "biomesoplenty:redwood_log",
+    "Properties": {
       "axis": "y"
     }
   },
   "leaves": {
-    "block": "biomesoplenty:redwood_leaves",
-    "properties": {
+    "Name": "biomesoplenty:redwood_leaves",
+    "Properties": {
       "persistent": "false"
     }
   },

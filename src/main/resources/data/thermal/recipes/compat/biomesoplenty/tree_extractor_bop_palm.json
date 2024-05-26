@@ -1,14 +1,14 @@
 {
   "type": "thermal:tree_extractor",
   "trunk": {
-    "block": "biomesoplenty:palm_log",
-    "properties": {
+    "Name": "biomesoplenty:palm_log",
+    "Properties": {
       "axis": "y"
     }
   },
   "leaves": {
-    "block": "biomesoplenty:palm_leaves",
-    "properties": {
+    "Name": "biomesoplenty:palm_leaves",
+    "Properties": {
       "persistent": "false"
     }
   },

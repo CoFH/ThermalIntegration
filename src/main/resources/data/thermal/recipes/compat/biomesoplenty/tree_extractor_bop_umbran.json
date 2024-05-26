@@ -1,11 +1,11 @@
 {
   "type": "thermal:tree_extractor",
   "trunk": {
-    "block": "biomesoplenty:umbran_log"
+    "Name": "biomesoplenty:umbran_log"
   },
   "leaves": {
-    "block": "biomesoplenty:umbran_leaves",
-    "properties": {
+    "Name": "biomesoplenty:umbran_leaves",
+    "Properties": {
       "persistent": "false"
     }
   },

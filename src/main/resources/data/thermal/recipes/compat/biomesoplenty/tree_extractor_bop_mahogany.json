@@ -1,11 +1,11 @@
 {
   "type": "thermal:tree_extractor",
   "trunk": {
-    "block": "biomesoplenty:mahogany_log"
+    "Name": "biomesoplenty:mahogany_log"
   },
   "leaves": {
-    "block": "biomesoplenty:mahogany_leaves",
-    "properties": {
+    "Name": "biomesoplenty:mahogany_leaves",
+    "Properties": {
       "persistent": "false"
     }
   },

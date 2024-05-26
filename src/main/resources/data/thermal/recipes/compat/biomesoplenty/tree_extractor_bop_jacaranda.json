@@ -1,11 +1,11 @@
 {
   "type": "thermal:tree_extractor",
   "trunk": {
-    "block": "biomesoplenty:jacaranda_log"
+    "Name": "biomesoplenty:jacaranda_log"
   },
   "leaves": {
-    "block": "biomesoplenty:jacaranda_leaves",
-    "properties": {
+    "Name": "biomesoplenty:jacaranda_leaves",
+    "Properties": {
       "persistent": "false"
     }
   },

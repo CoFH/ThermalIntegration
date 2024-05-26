@@ -1,14 +1,14 @@
 {
   "type": "thermal:tree_extractor",
   "trunk": {
-    "block": "minecraft:oak_log",
-    "properties": {
+    "Name": "minecraft:oak_log",
+    "Properties": {
       "axis": "y"
     }
   },
   "leaves": {
-    "block": "biomesoplenty:origin_leaves",
-    "properties": {
+    "Name": "biomesoplenty:origin_leaves",
+    "Properties": {
       "persistent": "false"
     }
   },

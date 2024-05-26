@@ -1,11 +1,11 @@
 {
   "type": "thermal:tree_extractor",
   "trunk": {
-    "block": "minecraft:birch_log"
+    "Name": "minecraft:birch_log"
   },
   "leaves": {
-    "block": "biomesoplenty:yellow_autumn_leaves",
-    "properties": {
+    "Name": "biomesoplenty:yellow_autumn_leaves",
+    "Properties": {
       "persistent": "false"
     }
   },

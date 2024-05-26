@@ -1,11 +1,11 @@
 {
   "type": "thermal:tree_extractor",
   "trunk": {
-    "block": "minecraft:cherry_log"
+    "Name": "minecraft:cherry_log"
   },
   "leaves": {
-    "block": "biomesoplenty:snowblossom_leaves",
-    "properties": {
+    "Name": "biomesoplenty:snowblossom_leaves",
+    "Properties": {
       "persistent": "false"
     }
   },
