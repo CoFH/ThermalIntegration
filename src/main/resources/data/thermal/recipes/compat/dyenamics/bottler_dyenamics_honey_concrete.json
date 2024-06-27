@@ -1,0 +1,24 @@
+{
+    "type": "thermal:bottler",
+    "ingredients": [
+      {
+        "item": "dyenamics:honey_concrete_powder"
+      },
+      {
+        "fluid": "minecraft:water",
+        "amount": 1000
+      }
+    ],
+    "result": [
+      {
+        "item": "dyenamics:honey_concrete"
+      }
+    ],
+    "conditions": [
+      {
+        "type": "thermal:flag",
+        "flag": "mod_dyenamics"
+      }
+    ]
+  }
+  
