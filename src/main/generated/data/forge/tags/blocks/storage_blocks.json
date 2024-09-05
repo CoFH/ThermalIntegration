@@ -1,6 +1,6 @@
 {
   "values": [
-    "#forge:storage_blocks/rose_gold",
-    "#forge:storage_blocks/steel"
+    "#c:storage_blocks/rose_gold",
+    "#c:storage_blocks/steel"
   ]
 }

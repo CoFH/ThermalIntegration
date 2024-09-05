@@ -1,15 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "type": "thermal:flag",
-      "flag": "rose_gold"
+      "type": "cofh_core:flag_set",
+      "flag": "thermal:rose_gold"
     }
   ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "key": {
     "#": {
-      "tag": "forge:ingots/rose_gold"
+      "tag": "c:ingots/rose_gold"
     },
     "i": {
       "tag": "forge:nuggets/iron"
@@ -22,6 +22,5 @@
   ],
   "result": {
     "item": "thermal:rose_gold_gear"
-  },
-  "show_notification": true
+  }
 }

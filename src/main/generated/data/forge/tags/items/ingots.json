@@ -1,6 +1,6 @@
 {
   "values": [
-    "#forge:ingots/rose_gold",
-    "#forge:ingots/steel"
+    "#c:ingots/rose_gold",
+    "#c:ingots/steel"
   ]
 }

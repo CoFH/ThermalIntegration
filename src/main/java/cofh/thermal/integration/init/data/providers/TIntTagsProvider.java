@@ -20,7 +20,7 @@ import static cofh.thermal.core.ThermalCore.BLOCKS;
 import static cofh.thermal.core.ThermalCore.ITEMS;
 import static cofh.thermal.lib.util.ThermalIDs.ID_ROSE_GOLD_BLOCK;
 import static cofh.thermal.lib.util.ThermalIDs.ID_STEEL_BLOCK;
-import static net.minecraftforge.common.Tags.Items.*;
+import static net.neoforged.neoforge.common.Tags.Items.*;
 
 public class TIntTagsProvider {
 

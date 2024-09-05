@@ -5,23 +5,23 @@ import cofh.thermal.integration.common.config.TIntConfig;
 import cofh.thermal.integration.init.registries.TIntBlocks;
 import cofh.thermal.integration.init.registries.TIntItems;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.neoforged.neoforge.registries.NewRegistryEvent;
 
+import static cofh.lib.util.FlagManager.setFlag;
 import static cofh.lib.util.constants.ModIds.ID_THERMAL_INTEGRATION;
-import static cofh.thermal.lib.util.ThermalFlags.*;
+import static cofh.thermal.lib.util.ThermalFlags.FLAG_RESOURCE_ROSE_GOLD;
+import static cofh.thermal.lib.util.ThermalFlags.FLAG_RESOURCE_STEEL;
 
 @Mod (ID_THERMAL_INTEGRATION)
 public class ThermalIntegration {
 
     public static final ConfigManager COMPAT_CONFIG_MANAGER = new ConfigManager();
 
-    public ThermalIntegration() {
+    public ThermalIntegration(ModContainer modContainer, IEventBus modEventBus) {
 
         setFeatureFlags();
-
-        final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         TIntConfig.addModConfig("biomesoplenty", "Biomes O' Plenty");
         TIntConfig.addModConfig("create", "Create");

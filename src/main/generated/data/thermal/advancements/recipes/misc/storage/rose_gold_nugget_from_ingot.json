@@ -1,0 +1,56 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "cofh_core:flag_set",
+      "flag": "thermal:rose_gold"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_at_least_9_rose_gold_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "count": {
+              "min": 9
+            },
+            "items": [
+              "thermal:rose_gold_nugget"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_rose_gold_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thermal:rose_gold_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "thermal:storage/rose_gold_nugget_from_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_at_least_9_rose_gold_nugget",
+      "has_rose_gold_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "thermal:storage/rose_gold_nugget_from_ingot"
+    ]
+  }
+}

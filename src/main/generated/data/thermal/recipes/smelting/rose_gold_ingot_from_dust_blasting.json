@@ -1,12 +1,12 @@
 {
-  "type": "minecraft:blasting",
-  "category": "misc",
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "type": "thermal:flag",
-      "flag": "rose_gold"
+      "type": "cofh_core:flag_set",
+      "flag": "thermal:rose_gold"
     }
   ],
+  "type": "minecraft:blasting",
+  "category": "misc",
   "cookingtime": 100,
   "experience": 0.0,
   "ingredient": {

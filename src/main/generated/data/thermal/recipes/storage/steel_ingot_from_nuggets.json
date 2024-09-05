@@ -1,15 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "type": "thermal:flag",
-      "flag": "steel"
+      "type": "cofh_core:flag_set",
+      "flag": "thermal:steel"
     }
   ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "key": {
     "#": {
-      "tag": "forge:nuggets/steel"
+      "tag": "c:nuggets/steel"
     },
     "I": {
       "item": "thermal:steel_nugget"
@@ -22,6 +22,5 @@
   ],
   "result": {
     "item": "thermal:steel_ingot"
-  },
-  "show_notification": true
+  }
 }

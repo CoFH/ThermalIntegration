@@ -6,7 +6,9 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 import java.util.ArrayList;
 import java.util.List;
 
-import static cofh.thermal.lib.util.ThermalFlags.*;
+import static cofh.lib.util.FlagManager.setFlag;
+import static cofh.thermal.lib.util.ThermalFlags.FLAG_RESOURCE_ROSE_GOLD;
+import static cofh.thermal.lib.util.ThermalFlags.FLAG_RESOURCE_STEEL;
 
 public class TIntConfig implements IBaseConfig {
 
