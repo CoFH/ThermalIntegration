@@ -17,7 +17,7 @@
   "conditions": [
     {
       "flag": "rose_gold",
-      "type": "thermal:flag"
+      "type": "cofh_core:flag_set"
     }
   ]
 }

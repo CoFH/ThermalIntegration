@@ -5,6 +5,7 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 
 import static cofh.lib.util.FlagManager.setFlag;
 import static cofh.lib.util.Utils.isModLoaded;
+import static cofh.lib.util.constants.ModIds.ID_THERMAL;
 
 public class ModSupportConfig implements IBaseConfig {
 
@@ -30,7 +31,7 @@ public class ModSupportConfig implements IBaseConfig {
     @Override
     public void refresh() {
 
-        setFlag("mod_" + modId, () -> modSupport.get() && isModLoaded(modId));
+        setFlag(ID_THERMAL + ":mod_" + modId, () -> modSupport.get() && isModLoaded(modId));
     }
 
 }

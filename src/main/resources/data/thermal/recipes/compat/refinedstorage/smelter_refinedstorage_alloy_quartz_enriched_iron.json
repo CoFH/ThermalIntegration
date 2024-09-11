@@ -31,10 +31,10 @@
     }
   ],
   "energy": 6400,
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "type": "thermal:flag",
-      "flag": "mod_refinedstorage"
+      "type": "cofh_core:flag_set",
+      "flag": "thermal:mod_refinedstorage"
     }
   ]
 }

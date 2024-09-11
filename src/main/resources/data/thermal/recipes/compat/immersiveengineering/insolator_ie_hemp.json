@@ -13,10 +13,10 @@
       "chance": 1.1
     }
   ],
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "type": "thermal:flag",
-      "flag": "mod_immersiveengineering"
+      "type": "cofh_core:flag_set",
+      "flag": "thermal:mod_immersiveengineering"
     }
   ]
 }

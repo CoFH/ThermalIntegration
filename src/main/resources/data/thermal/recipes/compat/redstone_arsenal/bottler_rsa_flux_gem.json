@@ -14,10 +14,10 @@
       "item": "redstone_arsenal:flux_gem"
     }
   ],
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "type": "thermal:flag",
-      "flag": "mod_redstone_arsenal"
+      "type": "cofh_core:flag_set",
+      "flag": "thermal:mod_redstone_arsenal"
     }
   ]
 }

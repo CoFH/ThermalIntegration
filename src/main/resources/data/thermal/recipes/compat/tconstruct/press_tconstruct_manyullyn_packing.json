@@ -15,10 +15,10 @@
     }
   ],
   "energy": 400,
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "type": "thermal:flag",
-      "flag": "mod_tconstruct"
+      "type": "cofh_core:flag_set",
+      "flag": "thermal:mod_tconstruct"
     }
   ]
 }

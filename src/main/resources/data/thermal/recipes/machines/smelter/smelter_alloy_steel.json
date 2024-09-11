@@ -25,7 +25,7 @@
   "conditions": [
     {
       "flag": "steel",
-      "type": "thermal:flag"
+      "type": "cofh_core:flag_set"
     }
   ]
 }

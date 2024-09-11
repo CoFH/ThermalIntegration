@@ -12,10 +12,10 @@
     }
   ],
   "energy": 100000,
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "type": "thermal:flag",
-      "flag": "mod_mysticalagriculture"
+      "type": "cofh_core:flag_set",
+      "flag": "thermal:mod_mysticalagriculture"
     },
     {
       "type": "mysticalagriculture:crop_has_material",

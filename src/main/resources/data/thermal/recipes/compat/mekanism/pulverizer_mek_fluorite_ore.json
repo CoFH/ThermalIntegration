@@ -21,10 +21,10 @@
     }
   ],
   "experience": 0.5,
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "type": "thermal:flag",
-      "flag": "mod_mekanism"
+      "type": "cofh_core:flag_set",
+      "flag": "thermal:mod_mekanism"
     }
   ]
 }

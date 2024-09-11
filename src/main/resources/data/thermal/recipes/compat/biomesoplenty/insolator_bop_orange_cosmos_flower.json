@@ -9,10 +9,10 @@
       "chance": 2.0
     }
   ],
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "type": "thermal:flag",
-      "flag": "mod_biomesoplenty"
+      "type": "cofh_core:flag_set",
+      "flag": "thermal:mod_biomesoplenty"
     }
   ]
 }
