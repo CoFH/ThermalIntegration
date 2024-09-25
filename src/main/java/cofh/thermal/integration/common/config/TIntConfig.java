@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;
 
+import static cofh.lib.util.Constants.TRUE;
 import static cofh.thermal.lib.util.ThermalFlags.*;
 
 public class TIntConfig implements IBaseConfig {
@@ -64,9 +65,9 @@ public class TIntConfig implements IBaseConfig {
     }
 
     // region CONFIG VARIABLES
-    private Supplier<Boolean> boolAluminum;
-    private Supplier<Boolean> boolRoseGold;
-    private Supplier<Boolean> boolSteel;
-    private Supplier<Boolean> boolUranium;
+    private Supplier<Boolean> boolAluminum = TRUE;
+    private Supplier<Boolean> boolRoseGold = TRUE;
+    private Supplier<Boolean> boolSteel = TRUE;
+    private Supplier<Boolean> boolUranium = TRUE;
     // endregion
 }

@@ -1,8 +1,5 @@
 {
   "values": [
-    "thermal:aluminum_block",
-    "thermal:rose_gold_block",
-    "thermal:steel_block",
-    "thermal:uranium_block"
+    "thermal:rose_gold_block"
   ]
 }

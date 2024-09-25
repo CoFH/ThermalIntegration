@@ -18,6 +18,8 @@ import static cofh.lib.util.constants.ModIds.ID_THERMAL;
 import static cofh.lib.util.constants.ModIds.ID_THERMAL_INTEGRATION;
 import static cofh.thermal.core.ThermalCore.BLOCKS;
 import static cofh.thermal.core.ThermalCore.ITEMS;
+import static cofh.thermal.core.util.RegistrationHelper.deepslate;
+import static cofh.thermal.core.util.RegistrationHelper.raw;
 import static cofh.thermal.lib.util.ThermalIDs.*;
 import static net.minecraftforge.common.Tags.Items.*;
 
@@ -42,7 +44,29 @@ public class TIntTagsProvider {
             );
 
             // region RESOURCES
+            tag(BlockTagsCoFH.ORES_ALUMINUM).add(BLOCKS.get(ID_ALUMINUM_ORE));
+            tag(BlockTagsCoFH.ORES_URANIUM).add(BLOCKS.get(ID_URANIUM_ORE));
 
+            tag(BlockTagsCoFH.ORES_ALUMINUM).add(BLOCKS.get(deepslate(ID_ALUMINUM_ORE)));
+            tag(BlockTagsCoFH.ORES_URANIUM).add(BLOCKS.get(deepslate(ID_URANIUM_ORE)));
+
+            tag(Tags.Blocks.ORES).addTags(
+                    BlockTagsCoFH.ORES_ALUMINUM,
+                    BlockTagsCoFH.ORES_URANIUM
+            );
+            tag(Tags.Blocks.ORES_IN_GROUND_STONE).add(BLOCKS.get(ID_ALUMINUM_ORE));
+            tag(Tags.Blocks.ORES_IN_GROUND_STONE).add(BLOCKS.get(ID_URANIUM_ORE));
+
+            tag(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE).add(BLOCKS.get(deepslate(ID_ALUMINUM_ORE)));
+            tag(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE).add(BLOCKS.get(deepslate(ID_URANIUM_ORE)));
+
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(BLOCKS.get(ID_ALUMINUM_ORE));
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(BLOCKS.get(ID_URANIUM_ORE));
+
+            tag(BlockTags.NEEDS_IRON_TOOL).add(BLOCKS.get(ID_ALUMINUM_ORE));
+            tag(BlockTags.NEEDS_IRON_TOOL).add(BLOCKS.get(ID_URANIUM_ORE));
+            tag(BlockTags.NEEDS_IRON_TOOL).add(BLOCKS.get(deepslate(ID_ALUMINUM_ORE)));
+            tag(BlockTags.NEEDS_IRON_TOOL).add(BLOCKS.get(deepslate(ID_URANIUM_ORE)));
             // endregion
 
             // region STORAGE
@@ -51,18 +75,26 @@ public class TIntTagsProvider {
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(BLOCKS.get(ID_STEEL_BLOCK));
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(BLOCKS.get(ID_URANIUM_BLOCK));
 
-            tag(BlockTags.NEEDS_STONE_TOOL).add(BLOCKS.get(ID_ALUMINUM_BLOCK));
             tag(BlockTags.NEEDS_STONE_TOOL).add(BLOCKS.get(ID_ROSE_GOLD_BLOCK));
-            tag(BlockTags.NEEDS_STONE_TOOL).add(BLOCKS.get(ID_STEEL_BLOCK));
-            tag(BlockTags.NEEDS_STONE_TOOL).add(BLOCKS.get(ID_URANIUM_BLOCK));
+
+            tag(BlockTags.NEEDS_IRON_TOOL).add(BLOCKS.get(ID_ALUMINUM_BLOCK));
+            tag(BlockTags.NEEDS_IRON_TOOL).add(BLOCKS.get(ID_STEEL_BLOCK));
+            tag(BlockTags.NEEDS_IRON_TOOL).add(BLOCKS.get(ID_URANIUM_BLOCK));
+
+            tag(BlockTags.NEEDS_IRON_TOOL).add(BLOCKS.get(raw(ID_ALUMINUM_BLOCK)));
+            tag(BlockTags.NEEDS_IRON_TOOL).add(BLOCKS.get(raw(ID_URANIUM_BLOCK)));
 
             tag(BlockTagsCoFH.STORAGE_BLOCKS_ALUMINUM).add(BLOCKS.get(ID_ALUMINUM_BLOCK));
+            tag(BlockTagsCoFH.STORAGE_BLOCKS_RAW_ALUMINUM).add(BLOCKS.get(raw(ID_ALUMINUM_BLOCK)));
+            tag(BlockTagsCoFH.STORAGE_BLOCKS_RAW_URANIUM).add(BLOCKS.get(raw(ID_URANIUM_BLOCK)));
             tag(BlockTagsCoFH.STORAGE_BLOCKS_ROSE_GOLD).add(BLOCKS.get(ID_ROSE_GOLD_BLOCK));
             tag(BlockTagsCoFH.STORAGE_BLOCKS_STEEL).add(BLOCKS.get(ID_STEEL_BLOCK));
             tag(BlockTagsCoFH.STORAGE_BLOCKS_URANIUM).add(BLOCKS.get(ID_URANIUM_BLOCK));
 
             tag(Tags.Blocks.STORAGE_BLOCKS).addTags(
                     BlockTagsCoFH.STORAGE_BLOCKS_ALUMINUM,
+                    BlockTagsCoFH.STORAGE_BLOCKS_RAW_ALUMINUM,
+                    BlockTagsCoFH.STORAGE_BLOCKS_RAW_URANIUM,
                     BlockTagsCoFH.STORAGE_BLOCKS_ROSE_GOLD,
                     BlockTagsCoFH.STORAGE_BLOCKS_STEEL,
                     BlockTagsCoFH.STORAGE_BLOCKS_URANIUM
@@ -87,13 +119,20 @@ public class TIntTagsProvider {
         @Override
         protected void addTags(HolderLookup.Provider pProvider) {
 
+            copy(BlockTagsCoFH.ORES_ALUMINUM, ItemTagsCoFH.ORES_ALUMINUM);
+            copy(BlockTagsCoFH.ORES_URANIUM, ItemTagsCoFH.ORES_URANIUM);
+
             copy(BlockTagsCoFH.STORAGE_BLOCKS_ALUMINUM, ItemTagsCoFH.STORAGE_BLOCKS_ALUMINUM);
+            copy(BlockTagsCoFH.STORAGE_BLOCKS_RAW_ALUMINUM, ItemTagsCoFH.STORAGE_BLOCKS_RAW_ALUMINUM);
+            copy(BlockTagsCoFH.STORAGE_BLOCKS_RAW_URANIUM, ItemTagsCoFH.STORAGE_BLOCKS_RAW_URANIUM);
             copy(BlockTagsCoFH.STORAGE_BLOCKS_ROSE_GOLD, ItemTagsCoFH.STORAGE_BLOCKS_ROSE_GOLD);
             copy(BlockTagsCoFH.STORAGE_BLOCKS_STEEL, ItemTagsCoFH.STORAGE_BLOCKS_STEEL);
             copy(BlockTagsCoFH.STORAGE_BLOCKS_URANIUM, ItemTagsCoFH.STORAGE_BLOCKS_URANIUM);
 
             tag(Tags.Items.STORAGE_BLOCKS).addTags(
                     ItemTagsCoFH.STORAGE_BLOCKS_ALUMINUM,
+                    ItemTagsCoFH.STORAGE_BLOCKS_RAW_ALUMINUM,
+                    ItemTagsCoFH.STORAGE_BLOCKS_RAW_URANIUM,
                     ItemTagsCoFH.STORAGE_BLOCKS_ROSE_GOLD,
                     ItemTagsCoFH.STORAGE_BLOCKS_STEEL,
                     ItemTagsCoFH.STORAGE_BLOCKS_URANIUM
@@ -169,6 +208,14 @@ public class TIntTagsProvider {
                     ItemTagsCoFH.PLATES_ROSE_GOLD,
                     ItemTagsCoFH.PLATES_STEEL,
                     ItemTagsCoFH.PLATES_URANIUM
+            );
+
+            tag(ItemTagsCoFH.RAW_MATERIALS_ALUMINUM).add(ITEMS.get("raw_aluminum"));
+            tag(ItemTagsCoFH.RAW_MATERIALS_URANIUM).add(ITEMS.get("raw_uranium"));
+
+            tag(RAW_MATERIALS).addTags(
+                    ItemTagsCoFH.RAW_MATERIALS_ALUMINUM,
+                    ItemTagsCoFH.RAW_MATERIALS_URANIUM
             );
         }
 
