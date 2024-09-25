@@ -1,6 +1,8 @@
 {
   "values": [
+    "#forge:dusts/aluminum",
     "#forge:dusts/rose_gold",
-    "#forge:dusts/steel"
+    "#forge:dusts/steel",
+    "#forge:dusts/uranium"
   ]
 }

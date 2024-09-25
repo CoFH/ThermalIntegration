@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "uranium"
+    }
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/uranium"
+    },
+    "I": {
+      "item": "thermal:uranium_ingot"
+    }
+  },
+  "pattern": [
+    "###",
+    "#I#",
+    "###"
+  ],
+  "result": {
+    "item": "thermal:uranium_block"
+  },
+  "show_notification": true
+}

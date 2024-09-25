@@ -1,6 +1,8 @@
 {
   "values": [
+    "#forge:nuggets/aluminum",
     "#forge:nuggets/rose_gold",
-    "#forge:nuggets/steel"
+    "#forge:nuggets/steel",
+    "#forge:plates/uranium"
   ]
 }

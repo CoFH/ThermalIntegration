@@ -1,0 +1,19 @@
+{
+  "type": "thermal:smelter",
+  "ingredient": {
+    "tag": "forge:dusts/uranium"
+  },
+  "result": [
+    {
+      "item": "thermal:uranium_ingot",
+      "count": 1
+    }
+  ],
+  "energy_mod": 0.5,
+  "conditions": [
+    {
+      "flag": "uranium",
+      "type": "thermal:flag"
+    }
+  ]
+}

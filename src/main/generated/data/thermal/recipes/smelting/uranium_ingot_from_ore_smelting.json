@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "uranium"
+    }
+  ],
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "thermal:uranium_ore"
+  },
+  "result": "thermal:uranium_ingot"
+}

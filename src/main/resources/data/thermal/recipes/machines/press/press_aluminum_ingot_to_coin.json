@@ -1,0 +1,24 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/aluminum"
+    },
+    {
+      "item": "thermal:press_coin_die"
+    }
+  ],
+  "result": [
+    {
+      "item": "thermal:aluminum_coin",
+      "count": 3
+    }
+  ],
+  "energy": 2400,
+  "conditions": [
+    {
+      "flag": "aluminum",
+      "type": "thermal:flag"
+    }
+  ]
+}

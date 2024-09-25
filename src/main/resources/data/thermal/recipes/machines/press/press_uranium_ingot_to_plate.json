@@ -1,0 +1,17 @@
+{
+  "type": "thermal:press",
+  "ingredient": {
+    "tag": "forge:ingots/uranium"
+  },
+  "result": [
+    {
+      "item": "thermal:uranium_plate"
+    }
+  ],
+  "conditions": [
+    {
+      "flag": "uranium",
+      "type": "thermal:flag"
+    }
+  ]
+}

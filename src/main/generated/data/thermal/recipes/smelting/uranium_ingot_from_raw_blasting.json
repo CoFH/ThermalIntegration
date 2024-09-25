@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "uranium"
+    }
+  ],
+  "cookingtime": 100,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "thermal:raw_uranium"
+  },
+  "result": "thermal:uranium_ingot"
+}

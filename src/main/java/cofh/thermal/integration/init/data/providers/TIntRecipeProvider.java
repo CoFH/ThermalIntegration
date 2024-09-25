@@ -9,8 +9,7 @@ import java.util.function.Consumer;
 
 import static cofh.lib.util.constants.ModIds.ID_THERMAL;
 import static cofh.thermal.core.ThermalCore.ITEMS;
-import static cofh.thermal.lib.util.ThermalFlags.FLAG_RESOURCE_ROSE_GOLD;
-import static cofh.thermal.lib.util.ThermalFlags.FLAG_RESOURCE_STEEL;
+import static cofh.thermal.lib.util.ThermalFlags.*;
 
 public class TIntRecipeProvider extends RecipeProviderCoFH {
 
@@ -23,17 +22,19 @@ public class TIntRecipeProvider extends RecipeProviderCoFH {
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
 
-        generateAlloyRecipes("steel", withConditions(consumer).flag(FLAG_RESOURCE_STEEL));
-        generateAlloyRecipes("rose_gold", withConditions(consumer).flag(FLAG_RESOURCE_ROSE_GOLD));
+        generateMetalRecipes("aluminum", withConditions(consumer).flag(FLAG_RESOURCE_ALUMINUM), 0.8F);
+        generateMetalRecipes("uranium", withConditions(consumer).flag(FLAG_RESOURCE_URANIUM), 1.0F);
+        generateMetalRecipes("rose_gold", withConditions(consumer).flag(FLAG_RESOURCE_ROSE_GOLD), 0);
+        generateMetalRecipes("steel", withConditions(consumer).flag(FLAG_RESOURCE_STEEL), 0);
     }
 
     // region HELPERS
-    private void generateAlloyRecipes(String type, Consumer<FinishedRecipe> consumer) {
+    private void generateMetalRecipes(String type, Consumer<FinishedRecipe> consumer, float xp) {
 
         var reg = ITEMS;
 
         generateTypeRecipes(reg, consumer, type);
-        generateSmeltingAndBlastingRecipes(reg, consumer, type, 0);
+        generateSmeltingAndBlastingRecipes(reg, consumer, type, xp);
     }
     // endregion
 }

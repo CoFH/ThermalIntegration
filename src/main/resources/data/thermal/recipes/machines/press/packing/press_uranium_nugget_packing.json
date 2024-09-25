@@ -1,0 +1,24 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "tag": "forge:nuggets/uranium",
+      "count": 9
+    },
+    {
+      "item": "thermal:press_packing_3x3_die"
+    }
+  ],
+  "result": [
+    {
+      "item": "thermal:uranium_ingot"
+    }
+  ],
+  "energy": 400,
+  "conditions": [
+    {
+      "flag": "uranium",
+      "type": "thermal:flag"
+    }
+  ]
+}

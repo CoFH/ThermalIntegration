@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "aluminum"
+    }
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/aluminum"
+    },
+    "I": {
+      "item": "thermal:aluminum_ingot"
+    }
+  },
+  "pattern": [
+    "###",
+    "#I#",
+    "###"
+  ],
+  "result": {
+    "item": "thermal:aluminum_block"
+  },
+  "show_notification": true
+}

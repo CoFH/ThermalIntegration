@@ -1,0 +1,18 @@
+{
+  "type": "thermal:smelter",
+  "ingredient": {
+    "tag": "forge:raw_materials/uranium"
+  },
+  "result": [
+    {
+      "item": "thermal:uranium_ingot",
+      "chance": 1.5,
+      "locked": true
+    },
+    {
+      "item": "thermal:lead_nugget",
+      "chance": 2.0
+    }
+  ],
+  "experience": 0.5
+}

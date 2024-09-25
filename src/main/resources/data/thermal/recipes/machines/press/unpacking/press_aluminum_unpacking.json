@@ -1,0 +1,24 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "item": "thermal:aluminum_block"
+    },
+    {
+      "item": "thermal:press_unpacking_die"
+    }
+  ],
+  "result": [
+    {
+      "item": "thermal:aluminum_ingot",
+      "count": 9
+    }
+  ],
+  "energy": 400,
+  "conditions": [
+    {
+      "flag": "aluminum",
+      "type": "thermal:flag"
+    }
+  ]
+}

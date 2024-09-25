@@ -1,6 +1,8 @@
 {
   "values": [
+    "#forge:ingots/aluminum",
     "#forge:ingots/rose_gold",
-    "#forge:ingots/steel"
+    "#forge:ingots/steel",
+    "#forge:ingots/uranium"
   ]
 }

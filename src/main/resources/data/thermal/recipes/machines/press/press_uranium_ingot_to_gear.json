@@ -1,0 +1,23 @@
+{
+  "type": "thermal:press",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/uranium",
+      "count": 4
+    },
+    {
+      "item": "thermal:press_gear_die"
+    }
+  ],
+  "result": [
+    {
+      "item": "thermal:uranium_gear"
+    }
+  ],
+  "conditions": [
+    {
+      "flag": "uranium",
+      "type": "thermal:flag"
+    }
+  ]
+}

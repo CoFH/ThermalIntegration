@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "uranium"
+    }
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:nuggets/uranium"
+    },
+    "I": {
+      "item": "thermal:uranium_nugget"
+    }
+  },
+  "pattern": [
+    "###",
+    "#I#",
+    "###"
+  ],
+  "result": {
+    "item": "thermal:uranium_ingot"
+  },
+  "show_notification": true
+}

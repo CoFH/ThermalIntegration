@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "aluminum"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "thermal:aluminum_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "thermal:aluminum_nugget"
+  }
+}

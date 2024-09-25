@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "aluminum"
+    }
+  ],
+  "cookingtime": 200,
+  "experience": 0.8,
+  "ingredient": {
+    "item": "thermal:aluminum_ore"
+  },
+  "result": "thermal:aluminum_ingot"
+}

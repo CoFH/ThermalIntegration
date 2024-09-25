@@ -46,8 +46,9 @@ public class ThermalIntegration {
 
     private void setFeatureFlags() {
 
-        setFlag(FLAG_RESOURCE_STEEL, true);
+        setFlag(FLAG_RESOURCE_ALUMINUM, true);
         setFlag(FLAG_RESOURCE_ROSE_GOLD, true);
+        setFlag(FLAG_RESOURCE_STEEL, true);
     }
 
     private void registrySetup(final NewRegistryEvent event) {

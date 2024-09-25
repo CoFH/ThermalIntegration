@@ -1,0 +1,17 @@
+{
+  "type": "thermal:press",
+  "ingredient": {
+    "tag": "forge:ingots/aluminum"
+  },
+  "result": [
+    {
+      "item": "thermal:aluminum_plate"
+    }
+  ],
+  "conditions": [
+    {
+      "flag": "aluminum",
+      "type": "thermal:flag"
+    }
+  ]
+}

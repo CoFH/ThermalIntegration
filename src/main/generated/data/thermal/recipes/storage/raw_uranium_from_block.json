@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "uranium"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "thermal:raw_uranium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "thermal:raw_uranium"
+  }
+}

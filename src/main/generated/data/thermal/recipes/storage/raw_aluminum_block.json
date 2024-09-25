@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "aluminum"
+    }
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:raw_materials/aluminum"
+    },
+    "I": {
+      "item": "thermal:raw_aluminum"
+    }
+  },
+  "pattern": [
+    "###",
+    "#I#",
+    "###"
+  ],
+  "result": {
+    "item": "thermal:raw_aluminum_block"
+  },
+  "show_notification": true
+}

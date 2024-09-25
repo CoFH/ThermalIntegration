@@ -1,6 +1,8 @@
 {
   "values": [
+    "#forge:coins/aluminum",
     "#forge:coins/rose_gold",
-    "#forge:coins/steel"
+    "#forge:coins/steel",
+    "#forge:coins/uranium"
   ]
 }

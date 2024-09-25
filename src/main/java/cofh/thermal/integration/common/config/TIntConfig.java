@@ -5,6 +5,7 @@ import net.minecraftforge.common.ForgeConfigSpec;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Supplier;
 
 import static cofh.thermal.lib.util.ThermalFlags.*;
 
@@ -22,6 +23,10 @@ public class TIntConfig implements IBaseConfig {
 
         builder.push("Materials");
 
+        boolAluminum = builder
+                .comment("If TRUE, Thermal Series' Aluminum material and recipes are enabled.")
+                .define("Aluminum", true);
+
         boolRoseGold = builder
                 .comment("If TRUE, Thermal Series' Rose Gold material and recipes are enabled.")
                 .define("Rose Gold", true);
@@ -29,6 +34,10 @@ public class TIntConfig implements IBaseConfig {
         boolSteel = builder
                 .comment("If TRUE, Thermal Series' Steel material and recipes are enabled.")
                 .define("Steel", true);
+
+        boolUranium = builder
+                .comment("If TRUE, Thermal Series' Uranium material and recipes are enabled.")
+                .define("Uranium", true);
 
         builder.pop();
 
@@ -44,8 +53,10 @@ public class TIntConfig implements IBaseConfig {
     @Override
     public void refresh() {
 
+        setFlag(FLAG_RESOURCE_ALUMINUM, boolAluminum.get());
         setFlag(FLAG_RESOURCE_ROSE_GOLD, boolRoseGold.get());
         setFlag(FLAG_RESOURCE_STEEL, boolSteel.get());
+        setFlag(FLAG_RESOURCE_URANIUM, boolUranium.get());
 
         for (IBaseConfig config : MOD_CONFIGS) {
             config.refresh();
@@ -53,7 +64,9 @@ public class TIntConfig implements IBaseConfig {
     }
 
     // region CONFIG VARIABLES
-    private ForgeConfigSpec.BooleanValue boolRoseGold;
-    private ForgeConfigSpec.BooleanValue boolSteel;
+    private Supplier<Boolean> boolAluminum;
+    private Supplier<Boolean> boolRoseGold;
+    private Supplier<Boolean> boolSteel;
+    private Supplier<Boolean> boolUranium;
     // endregion
 }

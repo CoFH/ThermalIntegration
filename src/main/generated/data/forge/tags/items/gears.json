@@ -1,6 +1,8 @@
 {
   "values": [
+    "#forge:gears/aluminum",
     "#forge:gears/rose_gold",
-    "#forge:gears/steel"
+    "#forge:gears/steel",
+    "#forge:gears/uranium"
   ]
 }

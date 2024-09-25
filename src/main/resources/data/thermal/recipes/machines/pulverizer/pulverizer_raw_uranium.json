@@ -1,0 +1,17 @@
+{
+  "type": "thermal:pulverizer",
+  "ingredient": {
+    "tag": "forge:raw_materials/uranium"
+  },
+  "result": [
+    {
+      "item": "thermal:uranium_dust",
+      "chance": 1.25
+    },
+    {
+      "item": "thermal:lead_dust",
+      "chance": 0.1
+    }
+  ],
+  "experience": 0.1
+}

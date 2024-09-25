@@ -1,0 +1,13 @@
+{
+  "type": "thermal:smelter",
+  "ingredient": {
+    "tag": "forge:plates/rose_gold"
+  },
+  "result": [
+    {
+      "item": "thermal:rose_gold_ingot",
+      "count": 1
+    }
+  ],
+  "energy_mod": 0.5
+}
