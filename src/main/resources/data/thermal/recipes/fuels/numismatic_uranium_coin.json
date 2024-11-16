@@ -1,0 +1,13 @@
+{
+  "type": "thermal:numismatic_fuel",
+  "ingredient": {
+    "tag": "forge:coins/uranium"
+  },
+  "energy": 160000,
+  "conditions": [
+    {
+      "flag": "uranium",
+      "type": "thermal:flag"
+    }
+  ]
+}

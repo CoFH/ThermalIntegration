@@ -1,0 +1,13 @@
+{
+  "type": "thermal:numismatic_fuel",
+  "ingredient": {
+    "tag": "forge:coins/aluminum"
+  },
+  "energy": 32000,
+  "conditions": [
+    {
+      "flag": "aluminum",
+      "type": "thermal:flag"
+    }
+  ]
+}
