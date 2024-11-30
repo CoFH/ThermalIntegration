@@ -18,8 +18,10 @@ import static cofh.lib.util.constants.ModIds.ID_THERMAL;
 import static cofh.lib.util.constants.ModIds.ID_THERMAL_INTEGRATION;
 import static cofh.thermal.core.ThermalCore.BLOCKS;
 import static cofh.thermal.core.ThermalCore.ITEMS;
-import static cofh.thermal.lib.util.ThermalIDs.ID_ROSE_GOLD_BLOCK;
-import static cofh.thermal.lib.util.ThermalIDs.ID_STEEL_BLOCK;
+import static cofh.thermal.core.util.RegistrationHelper.deepslate;
+import static cofh.thermal.core.util.RegistrationHelper.raw;
+import static cofh.thermal.lib.util.ThermalIDs.*;
+import static cofh.thermal.lib.util.ThermalIDs.ID_URANIUM_BLOCK;
 import static net.neoforged.neoforge.common.Tags.Items.*;
 
 public class TIntTagsProvider {
@@ -36,27 +38,67 @@ public class TIntTagsProvider {
         protected void addTags(HolderLookup.Provider pProvider) {
 
             tag(BlockTags.BEACON_BASE_BLOCKS).add(
+                    BLOCKS.get(ID_ALUMINUM_BLOCK),
                     BLOCKS.get(ID_ROSE_GOLD_BLOCK),
-                    BLOCKS.get(ID_STEEL_BLOCK)
+                    BLOCKS.get(ID_STEEL_BLOCK),
+                    BLOCKS.get(ID_URANIUM_BLOCK)
             );
 
             // region RESOURCES
+            tag(BlockTagsCoFH.ORES_ALUMINUM).add(BLOCKS.get(ID_ALUMINUM_ORE));
+            tag(BlockTagsCoFH.ORES_URANIUM).add(BLOCKS.get(ID_URANIUM_ORE));
 
+            tag(BlockTagsCoFH.ORES_ALUMINUM).add(BLOCKS.get(deepslate(ID_ALUMINUM_ORE)));
+            tag(BlockTagsCoFH.ORES_URANIUM).add(BLOCKS.get(deepslate(ID_URANIUM_ORE)));
+
+            tag(Tags.Blocks.ORES).addTags(
+                    BlockTagsCoFH.ORES_ALUMINUM,
+                    BlockTagsCoFH.ORES_URANIUM
+            );
+            tag(Tags.Blocks.ORES_IN_GROUND_STONE).add(BLOCKS.get(ID_ALUMINUM_ORE));
+            tag(Tags.Blocks.ORES_IN_GROUND_STONE).add(BLOCKS.get(ID_URANIUM_ORE));
+
+            tag(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE).add(BLOCKS.get(deepslate(ID_ALUMINUM_ORE)));
+            tag(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE).add(BLOCKS.get(deepslate(ID_URANIUM_ORE)));
+
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(BLOCKS.get(ID_ALUMINUM_ORE));
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(BLOCKS.get(ID_URANIUM_ORE));
+
+            tag(BlockTags.NEEDS_IRON_TOOL).add(BLOCKS.get(ID_ALUMINUM_ORE));
+            tag(BlockTags.NEEDS_IRON_TOOL).add(BLOCKS.get(ID_URANIUM_ORE));
+            tag(BlockTags.NEEDS_IRON_TOOL).add(BLOCKS.get(deepslate(ID_ALUMINUM_ORE)));
+            tag(BlockTags.NEEDS_IRON_TOOL).add(BLOCKS.get(deepslate(ID_URANIUM_ORE)));
             // endregion
 
             // region STORAGE
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(BLOCKS.get(ID_ALUMINUM_BLOCK));
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(BLOCKS.get(ID_ROSE_GOLD_BLOCK));
             tag(BlockTags.MINEABLE_WITH_PICKAXE).add(BLOCKS.get(ID_STEEL_BLOCK));
+            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(BLOCKS.get(ID_URANIUM_BLOCK));
 
             tag(BlockTags.NEEDS_STONE_TOOL).add(BLOCKS.get(ID_ROSE_GOLD_BLOCK));
-            tag(BlockTags.NEEDS_STONE_TOOL).add(BLOCKS.get(ID_STEEL_BLOCK));
 
+            tag(BlockTags.NEEDS_IRON_TOOL).add(BLOCKS.get(ID_ALUMINUM_BLOCK));
+            tag(BlockTags.NEEDS_IRON_TOOL).add(BLOCKS.get(ID_STEEL_BLOCK));
+            tag(BlockTags.NEEDS_IRON_TOOL).add(BLOCKS.get(ID_URANIUM_BLOCK));
+
+            tag(BlockTags.NEEDS_IRON_TOOL).add(BLOCKS.get(raw(ID_ALUMINUM_BLOCK)));
+            tag(BlockTags.NEEDS_IRON_TOOL).add(BLOCKS.get(raw(ID_URANIUM_BLOCK)));
+
+            tag(BlockTagsCoFH.STORAGE_BLOCKS_ALUMINUM).add(BLOCKS.get(ID_ALUMINUM_BLOCK));
+            tag(BlockTagsCoFH.STORAGE_BLOCKS_RAW_ALUMINUM).add(BLOCKS.get(raw(ID_ALUMINUM_BLOCK)));
+            tag(BlockTagsCoFH.STORAGE_BLOCKS_RAW_URANIUM).add(BLOCKS.get(raw(ID_URANIUM_BLOCK)));
             tag(BlockTagsCoFH.STORAGE_BLOCKS_ROSE_GOLD).add(BLOCKS.get(ID_ROSE_GOLD_BLOCK));
             tag(BlockTagsCoFH.STORAGE_BLOCKS_STEEL).add(BLOCKS.get(ID_STEEL_BLOCK));
+            tag(BlockTagsCoFH.STORAGE_BLOCKS_URANIUM).add(BLOCKS.get(ID_URANIUM_BLOCK));
 
             tag(Tags.Blocks.STORAGE_BLOCKS).addTags(
+                    BlockTagsCoFH.STORAGE_BLOCKS_ALUMINUM,
+                    BlockTagsCoFH.STORAGE_BLOCKS_RAW_ALUMINUM,
+                    BlockTagsCoFH.STORAGE_BLOCKS_RAW_URANIUM,
                     BlockTagsCoFH.STORAGE_BLOCKS_ROSE_GOLD,
-                    BlockTagsCoFH.STORAGE_BLOCKS_STEEL
+                    BlockTagsCoFH.STORAGE_BLOCKS_STEEL,
+                    BlockTagsCoFH.STORAGE_BLOCKS_URANIUM
             );
             // endregion
 
@@ -78,60 +120,103 @@ public class TIntTagsProvider {
         @Override
         protected void addTags(HolderLookup.Provider pProvider) {
 
+            copy(BlockTagsCoFH.ORES_ALUMINUM, ItemTagsCoFH.ORES_ALUMINUM);
+            copy(BlockTagsCoFH.ORES_URANIUM, ItemTagsCoFH.ORES_URANIUM);
+
+            copy(BlockTagsCoFH.STORAGE_BLOCKS_ALUMINUM, ItemTagsCoFH.STORAGE_BLOCKS_ALUMINUM);
+            copy(BlockTagsCoFH.STORAGE_BLOCKS_RAW_ALUMINUM, ItemTagsCoFH.STORAGE_BLOCKS_RAW_ALUMINUM);
+            copy(BlockTagsCoFH.STORAGE_BLOCKS_RAW_URANIUM, ItemTagsCoFH.STORAGE_BLOCKS_RAW_URANIUM);
             copy(BlockTagsCoFH.STORAGE_BLOCKS_ROSE_GOLD, ItemTagsCoFH.STORAGE_BLOCKS_ROSE_GOLD);
             copy(BlockTagsCoFH.STORAGE_BLOCKS_STEEL, ItemTagsCoFH.STORAGE_BLOCKS_STEEL);
+            copy(BlockTagsCoFH.STORAGE_BLOCKS_URANIUM, ItemTagsCoFH.STORAGE_BLOCKS_URANIUM);
 
             tag(Tags.Items.STORAGE_BLOCKS).addTags(
+                    ItemTagsCoFH.STORAGE_BLOCKS_ALUMINUM,
+                    ItemTagsCoFH.STORAGE_BLOCKS_RAW_ALUMINUM,
+                    ItemTagsCoFH.STORAGE_BLOCKS_RAW_URANIUM,
                     ItemTagsCoFH.STORAGE_BLOCKS_ROSE_GOLD,
-                    ItemTagsCoFH.STORAGE_BLOCKS_STEEL
+                    ItemTagsCoFH.STORAGE_BLOCKS_STEEL,
+                    ItemTagsCoFH.STORAGE_BLOCKS_URANIUM
             );
 
+            tag(ItemTagsCoFH.COINS_ALUMINUM).add(ITEMS.get("aluminum_coin"));
             tag(ItemTagsCoFH.COINS_ROSE_GOLD).add(ITEMS.get("rose_gold_coin"));
             tag(ItemTagsCoFH.COINS_STEEL).add(ITEMS.get("steel_coin"));
+            tag(ItemTagsCoFH.COINS_URANIUM).add(ITEMS.get("uranium_coin"));
 
             tag(ItemTagsCoFH.COINS).addTags(
+                    ItemTagsCoFH.COINS_ALUMINUM,
                     ItemTagsCoFH.COINS_ROSE_GOLD,
-                    ItemTagsCoFH.COINS_STEEL
+                    ItemTagsCoFH.COINS_STEEL,
+                    ItemTagsCoFH.COINS_URANIUM
             );
 
+            tag(ItemTagsCoFH.DUSTS_ALUMINUM).add(ITEMS.get("aluminum_dust"));
             tag(ItemTagsCoFH.DUSTS_ROSE_GOLD).add(ITEMS.get("rose_gold_dust"));
             tag(ItemTagsCoFH.DUSTS_STEEL).add(ITEMS.get("steel_dust"));
+            tag(ItemTagsCoFH.DUSTS_URANIUM).add(ITEMS.get("uranium_dust"));
 
             tag(DUSTS).addTags(
+                    ItemTagsCoFH.DUSTS_ALUMINUM,
                     ItemTagsCoFH.DUSTS_ROSE_GOLD,
-                    ItemTagsCoFH.DUSTS_STEEL
+                    ItemTagsCoFH.DUSTS_STEEL,
+                    ItemTagsCoFH.DUSTS_URANIUM
             );
 
+            tag(ItemTagsCoFH.GEARS_ALUMINUM).add(ITEMS.get("aluminum_gear"));
             tag(ItemTagsCoFH.GEARS_ROSE_GOLD).add(ITEMS.get("rose_gold_gear"));
             tag(ItemTagsCoFH.GEARS_STEEL).add(ITEMS.get("steel_gear"));
+            tag(ItemTagsCoFH.GEARS_URANIUM).add(ITEMS.get("uranium_gear"));
 
             tag(ItemTagsCoFH.GEARS).addTags(
+                    ItemTagsCoFH.GEARS_ALUMINUM,
                     ItemTagsCoFH.GEARS_ROSE_GOLD,
-                    ItemTagsCoFH.GEARS_STEEL
+                    ItemTagsCoFH.GEARS_STEEL,
+                    ItemTagsCoFH.GEARS_URANIUM
             );
 
+            tag(ItemTagsCoFH.INGOTS_ALUMINUM).add(ITEMS.get("aluminum_ingot"));
             tag(ItemTagsCoFH.INGOTS_ROSE_GOLD).add(ITEMS.get("rose_gold_ingot"));
             tag(ItemTagsCoFH.INGOTS_STEEL).add(ITEMS.get("steel_ingot"));
+            tag(ItemTagsCoFH.INGOTS_URANIUM).add(ITEMS.get("uranium_ingot"));
 
             tag(INGOTS).addTags(
+                    ItemTagsCoFH.INGOTS_ALUMINUM,
                     ItemTagsCoFH.INGOTS_ROSE_GOLD,
-                    ItemTagsCoFH.INGOTS_STEEL
+                    ItemTagsCoFH.INGOTS_STEEL,
+                    ItemTagsCoFH.INGOTS_URANIUM
             );
 
+            tag(ItemTagsCoFH.NUGGETS_ALUMINUM).add(ITEMS.get("aluminum_nugget"));
             tag(ItemTagsCoFH.NUGGETS_ROSE_GOLD).add(ITEMS.get("rose_gold_nugget"));
             tag(ItemTagsCoFH.NUGGETS_STEEL).add(ITEMS.get("steel_nugget"));
+            tag(ItemTagsCoFH.NUGGETS_URANIUM).add(ITEMS.get("uranium_nugget"));
 
             tag(NUGGETS).addTags(
+                    ItemTagsCoFH.NUGGETS_ALUMINUM,
                     ItemTagsCoFH.NUGGETS_ROSE_GOLD,
-                    ItemTagsCoFH.NUGGETS_STEEL
+                    ItemTagsCoFH.NUGGETS_STEEL,
+                    ItemTagsCoFH.NUGGETS_URANIUM
             );
 
+            tag(ItemTagsCoFH.PLATES_ALUMINUM).add(ITEMS.get("aluminum_plate"));
             tag(ItemTagsCoFH.PLATES_ROSE_GOLD).add(ITEMS.get("rose_gold_plate"));
             tag(ItemTagsCoFH.PLATES_STEEL).add(ITEMS.get("steel_plate"));
+            tag(ItemTagsCoFH.PLATES_URANIUM).add(ITEMS.get("uranium_plate"));
 
             tag(ItemTagsCoFH.PLATES).addTags(
+                    ItemTagsCoFH.PLATES_ALUMINUM,
                     ItemTagsCoFH.PLATES_ROSE_GOLD,
-                    ItemTagsCoFH.PLATES_STEEL
+                    ItemTagsCoFH.PLATES_STEEL,
+                    ItemTagsCoFH.PLATES_URANIUM
+            );
+
+            tag(ItemTagsCoFH.RAW_MATERIALS_ALUMINUM).add(ITEMS.get("raw_aluminum"));
+            tag(ItemTagsCoFH.RAW_MATERIALS_URANIUM).add(ITEMS.get("raw_uranium"));
+
+            tag(RAW_MATERIALS).addTags(
+                    ItemTagsCoFH.RAW_MATERIALS_ALUMINUM,
+                    ItemTagsCoFH.RAW_MATERIALS_URANIUM
             );
         }
 

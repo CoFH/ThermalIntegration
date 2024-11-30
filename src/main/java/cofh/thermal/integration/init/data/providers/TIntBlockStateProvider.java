@@ -6,8 +6,10 @@ import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 import static cofh.lib.util.constants.ModIds.ID_THERMAL;
 import static cofh.thermal.core.ThermalCore.BLOCKS;
-import static cofh.thermal.lib.util.ThermalIDs.ID_ROSE_GOLD_BLOCK;
-import static cofh.thermal.lib.util.ThermalIDs.ID_STEEL_BLOCK;
+import static cofh.thermal.core.util.RegistrationHelper.deepslate;
+import static cofh.thermal.core.util.RegistrationHelper.raw;
+import static cofh.thermal.lib.util.ThermalIDs.*;
+import static cofh.thermal.lib.util.ThermalIDs.ID_URANIUM_BLOCK;
 
 public class TIntBlockStateProvider extends BlockStateProviderCoFH {
 
@@ -21,8 +23,18 @@ public class TIntBlockStateProvider extends BlockStateProviderCoFH {
 
         var reg = BLOCKS;
 
-        simpleBlock(reg.getSup(ID_STEEL_BLOCK));
+        simpleBlock(reg.getSup(ID_ALUMINUM_ORE));
+        simpleBlock(reg.getSup(deepslate(ID_ALUMINUM_ORE)));
+        simpleBlock(reg.getSup(ID_URANIUM_ORE));
+        simpleBlock(reg.getSup(deepslate(ID_URANIUM_ORE)));
+
+        simpleBlock(reg.getSup(raw(ID_ALUMINUM_BLOCK)));
+        simpleBlock(reg.getSup(raw(ID_URANIUM_BLOCK)));
+
+        simpleBlock(reg.getSup(ID_ALUMINUM_BLOCK));
         simpleBlock(reg.getSup(ID_ROSE_GOLD_BLOCK));
+        simpleBlock(reg.getSup(ID_STEEL_BLOCK));
+        simpleBlock(reg.getSup(ID_URANIUM_BLOCK));
     }
 
 }

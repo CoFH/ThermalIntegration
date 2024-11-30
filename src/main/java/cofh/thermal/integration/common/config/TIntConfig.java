@@ -5,10 +5,11 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Supplier;
 
+import static cofh.lib.util.Constants.TRUE;
 import static cofh.lib.util.FlagManager.setFlag;
-import static cofh.thermal.lib.util.ThermalFlags.FLAG_RESOURCE_ROSE_GOLD;
-import static cofh.thermal.lib.util.ThermalFlags.FLAG_RESOURCE_STEEL;
+import static cofh.thermal.lib.util.ThermalFlags.*;
 
 public class TIntConfig implements IBaseConfig {
 
@@ -24,6 +25,10 @@ public class TIntConfig implements IBaseConfig {
 
         builder.push("Materials");
 
+        boolAluminum = builder
+                .comment("If TRUE, Thermal Series' Aluminum material and recipes are enabled.")
+                .define("Aluminum", true);
+
         boolRoseGold = builder
                 .comment("If TRUE, Thermal Series' Rose Gold material and recipes are enabled.")
                 .define("Rose Gold", true);
@@ -31,6 +36,10 @@ public class TIntConfig implements IBaseConfig {
         boolSteel = builder
                 .comment("If TRUE, Thermal Series' Steel material and recipes are enabled.")
                 .define("Steel", true);
+
+        boolUranium = builder
+                .comment("If TRUE, Thermal Series' Uranium material and recipes are enabled.")
+                .define("Uranium", true);
 
         builder.pop();
 
@@ -46,8 +55,10 @@ public class TIntConfig implements IBaseConfig {
     @Override
     public void refresh() {
 
+        setFlag(FLAG_RESOURCE_ALUMINUM, boolAluminum.get());
         setFlag(FLAG_RESOURCE_ROSE_GOLD, boolRoseGold.get());
         setFlag(FLAG_RESOURCE_STEEL, boolSteel.get());
+        setFlag(FLAG_RESOURCE_URANIUM, boolUranium.get());
 
         for (IBaseConfig config : MOD_CONFIGS) {
             config.refresh();
@@ -55,7 +66,9 @@ public class TIntConfig implements IBaseConfig {
     }
 
     // region CONFIG VARIABLES
-    private ModConfigSpec.BooleanValue boolRoseGold;
-    private ModConfigSpec.BooleanValue boolSteel;
+    private Supplier<Boolean> boolAluminum = TRUE;
+    private Supplier<Boolean> boolRoseGold = TRUE;
+    private Supplier<Boolean> boolSteel = TRUE;
+    private Supplier<Boolean> boolUranium = TRUE;
     // endregion
 }

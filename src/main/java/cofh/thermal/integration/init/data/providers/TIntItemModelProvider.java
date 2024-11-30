@@ -7,8 +7,10 @@ import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import static cofh.lib.util.constants.ModIds.ID_THERMAL;
 import static cofh.thermal.core.ThermalCore.BLOCKS;
 import static cofh.thermal.core.ThermalCore.ITEMS;
-import static cofh.thermal.lib.util.ThermalIDs.ID_ROSE_GOLD_BLOCK;
-import static cofh.thermal.lib.util.ThermalIDs.ID_STEEL_BLOCK;
+import static cofh.thermal.core.util.RegistrationHelper.deepslate;
+import static cofh.thermal.core.util.RegistrationHelper.raw;
+import static cofh.thermal.lib.util.ThermalIDs.*;
+import static cofh.thermal.lib.util.ThermalIDs.ID_URANIUM_BLOCK;
 
 public class TIntItemModelProvider extends ItemModelProviderCoFH {
 
@@ -23,9 +25,22 @@ public class TIntItemModelProvider extends ItemModelProviderCoFH {
         var regBlocks = BLOCKS;
         var regItems = ITEMS;
 
-        blockItem(regBlocks.getSup(ID_STEEL_BLOCK));
-        blockItem(regBlocks.getSup(ID_ROSE_GOLD_BLOCK));
+        blockItem(regBlocks.getSup(ID_ALUMINUM_ORE));
+        blockItem(regBlocks.getSup(ID_URANIUM_ORE));
 
+        blockItem(regBlocks.getSup(deepslate(ID_ALUMINUM_ORE)));
+        blockItem(regBlocks.getSup(deepslate(ID_URANIUM_ORE)));
+
+        blockItem(regBlocks.getSup(raw(ID_ALUMINUM_BLOCK)));
+        blockItem(regBlocks.getSup(raw(ID_URANIUM_BLOCK)));
+
+        blockItem(regBlocks.getSup(ID_ALUMINUM_BLOCK));
+        blockItem(regBlocks.getSup(ID_URANIUM_BLOCK));
+        blockItem(regBlocks.getSup(ID_ROSE_GOLD_BLOCK));
+        blockItem(regBlocks.getSup(ID_STEEL_BLOCK));
+
+        metalSet(regItems, "aluminum");
+        metalSet(regItems, "uranium");
         alloySet(regItems, "steel");
         alloySet(regItems, "rose_gold");
     }

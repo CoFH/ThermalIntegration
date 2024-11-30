@@ -7,8 +7,7 @@ import net.minecraft.data.recipes.RecipeOutput;
 
 import static cofh.lib.util.constants.ModIds.ID_THERMAL;
 import static cofh.thermal.core.ThermalCore.ITEMS;
-import static cofh.thermal.lib.util.ThermalFlags.FLAG_RESOURCE_ROSE_GOLD;
-import static cofh.thermal.lib.util.ThermalFlags.FLAG_RESOURCE_STEEL;
+import static cofh.thermal.lib.util.ThermalFlags.*;
 
 public class TIntRecipeProvider extends RecipeProviderCoFH {
 
@@ -20,17 +19,19 @@ public class TIntRecipeProvider extends RecipeProviderCoFH {
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
 
-        generateAlloyRecipes("steel", recipeOutput.withConditions(new FlagSetCondition(FLAG_RESOURCE_STEEL)));
-        generateAlloyRecipes("rose_gold", recipeOutput.withConditions(new FlagSetCondition(FLAG_RESOURCE_ROSE_GOLD)));
+        generateMetalRecipes("aluminum", recipeOutput.withConditions(new FlagSetCondition(FLAG_RESOURCE_ALUMINUM)), 0.8F);
+        generateMetalRecipes("uranium", recipeOutput.withConditions(new FlagSetCondition(FLAG_RESOURCE_URANIUM)), 1.0F);
+        generateMetalRecipes("rose_gold", recipeOutput.withConditions(new FlagSetCondition(FLAG_RESOURCE_ROSE_GOLD)), 0);
+        generateMetalRecipes("steel", recipeOutput.withConditions(new FlagSetCondition(FLAG_RESOURCE_STEEL)), 0);
     }
 
     // region HELPERS
-    private void generateAlloyRecipes(String type, RecipeOutput consumer) {
+    private void generateMetalRecipes(String type, RecipeOutput consumer, float xp) {
 
         var reg = ITEMS;
 
         generateTypeRecipes(reg, consumer, type);
-        generateSmeltingAndBlastingRecipes(reg, consumer, type, 0);
+        generateSmeltingAndBlastingRecipes(reg, consumer, type, xp);
     }
     // endregion
 }

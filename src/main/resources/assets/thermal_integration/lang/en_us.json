@@ -3,8 +3,27 @@
   "_comment": "Thermal Integration",
   "_comment": "========================================================================================================",
 
+  "block.thermal.aluminum_ore": "Bauxite",
+  "block.thermal.uranium_ore": "Pitchblende",
+  "block.thermal.deepslate_aluminum_ore": "Deepslate Bauxite",
+  "block.thermal.deepslate_uranium_ore": "Deepslate Pitchblende",
+  "block.thermal.raw_aluminum_block": "Block of Raw Aluminum",
+  "block.thermal.raw_uranium_block": "Block of Raw Uranium",
+
+  "block.thermal.aluminum_block": "Block of Aluminum",
   "block.thermal.rose_gold_block": "Block of Rose Gold",
   "block.thermal.steel_block": "Block of Steel",
+  "block.thermal.uranium_block": "Block of Uranium",
+
+  "item.thermal.raw_aluminum": "Raw Aluminum",
+  "item.thermal.raw_uranium": "Raw Uranium",
+
+  "item.thermal.aluminum_coin": "Aluminum Coin",
+  "item.thermal.aluminum_dust": "Aluminum Dust",
+  "item.thermal.aluminum_gear": "Aluminum Gear",
+  "item.thermal.aluminum_ingot": "Aluminum Ingot",
+  "item.thermal.aluminum_nugget": "Aluminum Nugget",
+  "item.thermal.aluminum_plate": "Aluminum Plate",
 
   "item.thermal.rose_gold_coin": "Rose Gold Coin",
   "item.thermal.rose_gold_dust": "Rose Gold Blend",
@@ -18,5 +37,12 @@
   "item.thermal.steel_gear": "Steel Gear",
   "item.thermal.steel_ingot": "Steel Ingot",
   "item.thermal.steel_nugget": "Steel Nugget",
-  "item.thermal.steel_plate": "Steel Plate"
+  "item.thermal.steel_plate": "Steel Plate",
+
+  "item.thermal.uranium_coin": "Uranium Coin",
+  "item.thermal.uranium_dust": "Uranium Dust",
+  "item.thermal.uranium_gear": "Uranium Gear",
+  "item.thermal.uranium_ingot": "Uranium Ingot",
+  "item.thermal.uranium_nugget": "Uranium Nugget",
+  "item.thermal.uranium_plate": "Uranium Plate"
 }

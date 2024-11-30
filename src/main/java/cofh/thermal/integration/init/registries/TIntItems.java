@@ -13,11 +13,10 @@ public class TIntItems {
 
     public static void register() {
 
-        //        registerMetalSet("aluminum", group, getFlag(FLAG_RESOURCE_ALUMINUM));
-        //        registerMetalSet("uranium", group, getFlag(FLAG_RESOURCE_URANIUM));
-
-        registerMetalSet("steel", Rarity.COMMON, false, true, ID_THERMAL_INTEGRATION);
-        registerMetalSet("rose_gold", Rarity.COMMON, false, true, ID_THERMAL_INTEGRATION);
+        registerMetalSet("aluminum", Rarity.COMMON, false, false, ID_THERMAL_INTEGRATION, 1001);
+        registerMetalSet("uranium", Rarity.COMMON, false, false, ID_THERMAL_INTEGRATION, 1001);
+        registerMetalSet("rose_gold", Rarity.COMMON, false, true, ID_THERMAL_INTEGRATION, 1051);
+        registerMetalSet("steel", Rarity.COMMON, false, true, ID_THERMAL_INTEGRATION, 1051);
     }
 
 }
