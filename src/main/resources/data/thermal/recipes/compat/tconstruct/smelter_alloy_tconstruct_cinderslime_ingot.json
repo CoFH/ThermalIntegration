@@ -2,21 +2,21 @@
   "type": "thermal:smelter",
   "ingredients": [
     {
-      "item": "minecraft:iron_ingot",
+      "tag": "forge:ingots/gold",
       "count": 1
     },
     {
-      "item": "tconstruct:blood_slime_ball",
+      "item": "tconstruct:ichor_slime_ball",
       "count": 1
     },
     {
-      "item": "minecraft:clay_ball",
+      "item": "tconstruct:scorched_brick",
       "count": 1
     }
   ],
   "result": [
     {
-      "item": "tconstruct:pig_iron_ingot",
+      "item": "tconstruct:cinderslime_ingot",
       "count": 2
     }
   ],
