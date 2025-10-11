@@ -1,0 +1,48 @@
+{
+  "_comment": "========================================================================================================",
+  "_comment": "Thermal Integration",
+  "_comment": "========================================================================================================",
+
+  "block.thermal.aluminum_ore": "Bauxita",
+  "block.thermal.uranium_ore": "Pechblenda",
+  "block.thermal.deepslate_aluminum_ore": "Bauxita de pizarra profunda",
+  "block.thermal.deepslate_uranium_ore": "Pechblenda de pizarra profunda",
+  "block.thermal.raw_aluminum_block": "Bloque de aluminio en bruto",
+  "block.thermal.raw_uranium_block": "Bloque de uranio en bruto",
+
+  "block.thermal.aluminum_block": "Bloque de aluminio",
+  "block.thermal.rose_gold_block": "Bloque de oro rosa",
+  "block.thermal.steel_block": "Bloque de acero",
+  "block.thermal.uranium_block": "Bloque de uranio",
+
+  "item.thermal.raw_aluminum": "Aluminio en bruto",
+  "item.thermal.raw_uranium": "Uranio en bruto",
+
+  "item.thermal.aluminum_coin": "Moneda de aluminio",
+  "item.thermal.aluminum_dust": "Polvo de aluminio",
+  "item.thermal.aluminum_gear": "Engranaje de aluminio",
+  "item.thermal.aluminum_ingot": "Lingote de aluminio",
+  "item.thermal.aluminum_nugget": "Pepita de aluminio",
+  "item.thermal.aluminum_plate": "Placa de aluminio",
+
+  "item.thermal.rose_gold_coin": "Moneda de oro rosa",
+  "item.thermal.rose_gold_dust": "Mezcla de oro rosa",
+  "item.thermal.rose_gold_gear": "Engranaje de oro rosa",
+  "item.thermal.rose_gold_ingot": "Lingote de oro rosa",
+  "item.thermal.rose_gold_nugget": "Pepita de oro rosa",
+  "item.thermal.rose_gold_plate": "Placa de oro rosa",
+
+  "item.thermal.steel_coin": "Moneda de acero",
+  "item.thermal.steel_dust": "Mezcla de acero",
+  "item.thermal.steel_gear": "Engranaje de acero",
+  "item.thermal.steel_ingot": "Lingote de acero",
+  "item.thermal.steel_nugget": "Pepita de acero",
+  "item.thermal.steel_plate": "Placa de acero",
+
+  "item.thermal.uranium_coin": "Moneda de uranio",
+  "item.thermal.uranium_dust": "Polvo de uranio",
+  "item.thermal.uranium_gear": "Engranaje de uranio",
+  "item.thermal.uranium_ingot": "Lingote de uranio",
+  "item.thermal.uranium_nugget": "Pepita de uranio",
+  "item.thermal.uranium_plate": "Placa de uranio"
+}
