@@ -11,7 +11,7 @@
       "item": "mysticalagriculture:brass_seeds"
     }
   ],
-  "energy": 100000,
+  "energy": 75000,
   "conditions": [
     {
       "type": "thermal:flag",

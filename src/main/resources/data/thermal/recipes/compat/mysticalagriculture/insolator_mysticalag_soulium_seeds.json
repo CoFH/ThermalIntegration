@@ -1,17 +1,17 @@
 {
   "type": "thermal:insolator",
   "ingredient": {
-    "item": "mysticalagriculture:copper_seeds"
+    "item": "mysticalagriculture:soulium_seeds"
   },
   "result": [
     {
-      "item": "mysticalagriculture:copper_essence"
+      "item": "mysticalagriculture:soulium_essence"
     },
     {
-      "item": "mysticalagriculture:copper_seeds"
+      "item": "mysticalagriculture:soulium_seeds"
     }
   ],
-  "energy": 75000,
+  "energy": 100000,
   "conditions": [
     {
       "type": "thermal:flag",
@@ -19,7 +19,7 @@
     },
     {
       "type": "mysticalagriculture:crop_has_material",
-      "crop": "mysticalagriculture:copper"
+      "crop": "mysticalagriculture:soulium"
     }
   ]
 }

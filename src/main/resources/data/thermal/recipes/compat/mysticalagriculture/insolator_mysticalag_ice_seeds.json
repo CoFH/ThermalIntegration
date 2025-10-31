@@ -11,7 +11,7 @@
       "item": "mysticalagriculture:ice_seeds"
     }
   ],
-  "energy": 100000,
+  "energy": 25000,
   "conditions": [
     {
       "type": "thermal:flag",
